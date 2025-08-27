@@ -1,7 +1,7 @@
 import './App.css'
-
 import Menu from './components/Menu'
 import Home from './components/Home'
+import Doacao from './components/Doacao'
 
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
     <div>
       <Menu />
       <Home />
+      <Doacao />
     </div>
   )
 }

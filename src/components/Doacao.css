@@ -1,0 +1,22 @@
+.doacao-container h1{
+  text-align: center;
+  font-size: 36px;
+}
+
+.cards {
+  background-image: url('../assets/img/doacao.png') ;
+  background-size: cover;
+  width: 100% ;
+  height: 600px;
+
+}
+
+.grid-card{
+  width: 45%;
+  margin: auto;
+}
+
+
+.col{
+  background-color: aqua;
+}
