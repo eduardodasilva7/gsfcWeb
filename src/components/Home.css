@@ -9,7 +9,8 @@
 .title{
   font-size: 20px;
   text-align: center;
-  margin-bottom: 15px;
+  margin: 10px 0;
+
 }
 
 .subtitle{
@@ -23,18 +24,96 @@
   color: #424242;
 }
 
-.btnMore{
-  font-size: 12px;
-  background-color: #0299DE;
-  width: 90px;
-  height: 30px;
-  border-radius: 10px;
+.textLogradouro{
+  font-size: 14px;
   text-align: center;
-  justify-content: center;
-  display: flex;
+  margin: 13px 50px;
+}
+
+a{
+  margin: 12px 0;
+  
 }
 
 .btnMaps{
   font-size: 14px;
+  margin: 10px 0;
+}
+
+.esquerda, .direita{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}   
+
+@media(min-width: 1024px){
+  .home-container{
+    flex-direction: row;
+
+  }
+  
+  .esquerda, .direita{
+    width: 50%;
+  }
+
+  .esquerda{
+    padding: 10px 0 10px 20px;
+  }
+
+  .direita{
+    padding: 10px 20px 10px 0;
+  }
+  
+  .title{
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .subtitle{
+    font-size: 22px;
+    margin-top: 19px;
+  }
+
+  .text{
+    font-size: 18px;
+  }
+
+  .textLogradouro{
+    font-size: 14px;
+    margin: 13px 100px;
+  }
+
+  .btn-info{
+    font-size: 18px;
+    margin: 25px 0;
+  }
+
+  .btnMaps{
+    font-size: 20px;
+  }
+
+  .imgONG{
+    width: 500px;
+    height: 250px;
+  }
+
+}
+
+@media(min-width: 1440px){
+  .direita .title{
+    font-size: 25px;
+
+  }
+
+  .imgMapa{
+    width: 490px;
+    height: 330px;
+  }
+
+  .direita{
+    margin-top: 20px;
+  }
+  
 
 }
