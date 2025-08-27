@@ -16,7 +16,16 @@
   margin: auto;
 }
 
-
-.col{
-  background-color: aqua;
+.linha1{
+  height: 195px;
 }
+
+.linha2{
+  height: 265px;
+}
+
+.linha3{
+  height: 140px;
+}
+
+
