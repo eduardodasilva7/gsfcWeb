@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './Doacao.css'
 
 
@@ -9,41 +11,39 @@ function Doacao() {
         <div className='grid-card'>
 
           <div className="row linha1">
-            <div className="col col-xl-6" style={{backgroundColor: '#A8E6CF'}}>
-              <h3>Jeitos de Doar</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta provident dolore hic sunt accusamus natus voluptas ex excepturi placeat unde officiis exercitationem explicabo, fugit dolorem porro error, atque beatae nostrum?</p>
+            <div className="col-12 col-md-6 col-xl-6 cardTitle cartao" style={{backgroundColor: '#A8E6CF'}}>
+              <h3 className='title'>Jeitos de Doar</h3>
             </div>
-            <div className="col col-xxl-6" style={{backgroundColor: '#B5EAD7'}}>
-              <h3>Texto</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laborum sapiente nostrum laboriosam dicta accusantium officia obcaecati sit, qui atque animi non expedita perferendis cum aspernatur ducimus unde beatae modi.</p>
-              <a href="">Saiba Mais</a>
+            <div className="col-12 col-md-6 col-xxl-6 cardSaibaMais cartao" style={{backgroundColor: '#B5EAD7'}}>
+              <p>As doações podem ser feitas de diferentes formas, como entrega presencial em pontos de coleta, contribuição em campanhas avulsas, participação em eventos drive-thru, ou ainda doações em parceria com organizações sociais como o Rotary.</p>
+              <a href="">Saiba Mais <FontAwesomeIcon icon={faArrowRight} /></a>
             </div>
           </div>
 
           <div className="row linha2">
-            <div className="col col-xl-4" style={{backgroundColor: '#66CDAA'}}>
+            <div className="col-12 col-md-4 col-xl-4 cartao" style={{backgroundColor: '#66CDAA'}}>
               <h3>Rotary</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odio provident adipisci distinctio, accusamus recusandae omnis eos facilis sed, nobis dolorum vero sequi laudantium sapiente. Placeat vitae sint itaque atque.</p>
+              <p>O Rotary é uma organização internacional de voluntários, presente em diversos países, que atua em projetos sociais, humanitários e educacionais. Ele apoia iniciativas que melhoram comunidades locais, incluindo campanhas de arrecadação de alimentos e produtos essenciais.</p>
             </div>
-            <div className="col col-xl-4" style={{backgroundColor: '#45B29D'}}>
+            <div className="col-12 col-md-4 col-xl-4 cartao" style={{backgroundColor: '#45B29D'}}>
               <h3>Avulsos</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consectetur in est esse harum consequatur excepturi ullam maxime quidem fuga soluta, ratione eaque recusandae voluptatum ducimus, error quas totam. Pariatur!</p>
+              <p>O termo “avulso” refere-se a doações feitas de maneira independente, sem necessidade de vínculo ou inscrição em uma campanha contínua. A pessoa pode doar um item ou uma quantidade pontual, de acordo com sua disponibilidade.</p>
             </div>
-            <div className="col col-xl-4" style={{backgroundColor: '#A3F4D8'}}>
+            <div className="col-12 col-md-4 col-xl-4 cartao" style={{backgroundColor: '#A3F4D8'}}>
               <h3>Drive-Thru</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorem nihil facilis eum delectus esse ratione reprehenderit repellendus eligendi, assumenda pariatur corporis eos consequatur aut blanditiis corrupti, consectetur quam. Facilis?</p>
+              <p>O drive-thru de doações é um modelo prático em que a pessoa não precisa sair do carro. Ela passa por um ponto de coleta e entrega os itens diretamente aos voluntários, de forma rápida, segura e organizada.</p>
             </div>
           </div>
 
           <div className='row linha3'>
-            <div className="col col-xl-12" style={{backgroundColor: '#A8E6CF'}}>
-              <h3>Contato</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div className="col-12 col-md-12 col-xl-12 cartao" style={{backgroundColor: '#A8E6CF'}}>
+              <h3>Aviso!</h3>
+              <p>Pedimos que não sejam doados produtos próximos do vencimento ou em mau estado de conservação. Isso garante a segurança alimentar e evita desperdício, permitindo que as doações realmente cheguem em boas condições a quem precisa.</p>
             </div>
           </div>
         </div>
       </div>
-      
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sapiente alias blanditiis, porro tempora enim cumque aut illum, voluptatum esse, quas ipsam magni. Quisquam accusamus ducimus quas quasi rerum odit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim vero expedita sit adipisci magnam quas consectetur voluptatem eius quam ratione eos sint totam iste, laudantium excepturi a, deleniti placeat perferendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi temporibus amet laudantium? Blanditiis repudiandae sed aut quos quia vel autem dolorem? Autem quisquam omnis consectetur libero perspiciatis laborum iusto inventore?</p>
     </div>
   );
 }

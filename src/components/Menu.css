@@ -48,7 +48,7 @@ a{
   color: black;
 }
 
-a:hover{
+.btnNav:hover{
   background-color: #FFBBBB;
   padding: 10px 20px;
   border-radius: 12px;

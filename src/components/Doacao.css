@@ -14,18 +14,78 @@
 .grid-card{
   width: 45%;
   margin: auto;
+  height: 100%;
 }
 
 .linha1{
-  height: 195px;
+  height: 35%; /*35%*/
 }
 
 .linha2{
-  height: 265px;
+  height: 42.5%;/* 42,5*/
 }
 
 .linha3{
-  height: 140px;
+  height: 22.5%; /* 22.5*/
 }
 
+.title{
+  font-size: 32px;
+}
 
+.cardTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cartao h3{
+  text-align: center;
+  font-size: 24px;
+}
+
+.cartao p{
+  font-size: 14px;
+}
+
+.cartao{
+  padding: 0 20px ;
+}
+
+.cardSaibaMais{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media(max-width: 1440px)  {
+  .cartao p{
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 1024px)  {
+  .cartao p{
+    font-size: 9px;
+    
+  }
+  .cards{
+    height: auto;
+    
+  }
+}
+
+@media(max-width: 700px)  {
+  .cards{
+    height: auto;
+    
+  }
+  .grid-card{
+  width: 60%;
+  margin: auto;
+  height: 100%;
+}
+}
