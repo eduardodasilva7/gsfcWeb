@@ -43,7 +43,7 @@ function Doacao() {
           </div>
         </div>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sapiente alias blanditiis, porro tempora enim cumque aut illum, voluptatum esse, quas ipsam magni. Quisquam accusamus ducimus quas quasi rerum odit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim vero expedita sit adipisci magnam quas consectetur voluptatem eius quam ratione eos sint totam iste, laudantium excepturi a, deleniti placeat perferendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi temporibus amet laudantium? Blanditiis repudiandae sed aut quos quia vel autem dolorem? Autem quisquam omnis consectetur libero perspiciatis laborum iusto inventore?</p>
+      
     </div>
   );
 }

@@ -2,6 +2,7 @@ import './App.css'
 import Menu from './components/Menu'
 import Home from './components/Home'
 import Doacao from './components/Doacao'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Menu />
       <Home />
       <Doacao />
+      <Footer />
     </div>
   )
 }

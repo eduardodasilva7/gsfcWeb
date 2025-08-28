@@ -15,6 +15,7 @@
   width: 45%;
   margin: auto;
   height: 100%;
+
 }
 
 .linha1{
@@ -70,11 +71,9 @@
 @media(max-width: 1024px)  {
   .cartao p{
     font-size: 9px;
-    
   }
   .cards{
-    height: auto;
-    
+    height: auto;  
   }
 }
 
