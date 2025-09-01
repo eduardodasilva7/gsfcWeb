@@ -1,7 +1,8 @@
  import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapLocationDot, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import imgEx from '../assets/img/imgExemplo.png';
+import imgEx from '../../assets/img/imgExemplo.png';
+import imagemMaps from '../../assets/img/imagemMaps.png';
 
 function Home() {
   return (
@@ -18,15 +19,15 @@ function Home() {
       
         <div className="direita">
           <h2 className='title'>Como chegar na nossa ONG</h2>
-          <img src={imgEx} alt="" className='img imgMapa' />
+          <a href="https://bit.ly/460ZEAa" target="_blank"><img src={imagemMaps} alt="" /></a>
           <p className='text textLogradouro'>Rua Diogo de Quadros, 363 - Chácara Santo António/Brooklin Santo Amaro - São Paulo - SP 04710-010</p>
-          <a href="" className='btnMaps'>
+          <a href="https://bit.ly/460ZEAa" className='btnMaps' target="_blank">
             <FontAwesomeIcon icon={faMapLocationDot} />
             Ver no Maps
             <FontAwesomeIcon icon={faArrowRight} />
           </a>
         </div>
-      
+        
 
     </div>
   );

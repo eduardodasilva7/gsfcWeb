@@ -1,8 +1,8 @@
 import './App.css'
-import Menu from './components/Menu'
-import Home from './components/Home'
-import Doacao from './components/Doacao'
-import Footer from './components/Footer'
+import Menu from './components/menu/Menu.jsx'
+import Home from './components/home/Home.jsx'
+import Doacao from './components/doacao/Doacao.jsx'
+import Footer from './components/footer/Footer.jsx'
 
 
 function App() {

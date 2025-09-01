@@ -1,5 +1,5 @@
 import './Footer.css';
-import logo from '../assets/img/logoP.png'
+import logo from '../../assets/img/logoP.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleQuestion, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';

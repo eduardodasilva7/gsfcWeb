@@ -1,6 +1,4 @@
-
-import menuImg from '../assets/img/menu.png';
-
+import menuImg from '../../assets/img/menu.png';
 import './Menu.css'
 
 function Menu(){

@@ -13,7 +13,7 @@
 }
 
 .logo{
-  content: url('../assets/img/logoP.png');
+  content: url('../../assets/img/logoP.png');
   height: 30px;
   width: auto; 
 }
@@ -62,7 +62,7 @@ a{
   }
   
   .logo{
-    content: url('../assets/img/logoG.png');
+    content: url('../../assets/img/logoG.png');
     height: 40px;
   }
 
