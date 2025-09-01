@@ -1,0 +1,23 @@
+.carousel  {
+  width: 100vw;
+}    
+
+.carousel-inner img{
+  width: 100vw;
+  height: 60vh;
+  object-fit: contain; 
+}
+
+.quem-somos h1{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.quem-somos-text{
+  font-size: 15px;
+  margin: 0 10px;
+  background-color: white;
+  padding:10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
