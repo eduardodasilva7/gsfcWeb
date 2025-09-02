@@ -52,7 +52,7 @@
 .carousel::scroll-button(right), .carousel::scroll-button(left){
   content: '→';
   border: none;
-  background-color: rgb(154, 6, 212);
+  background-color: #b6b6b6;
   font-family: Consolas;
   font-size: 3em;
   color: white;
@@ -84,11 +84,11 @@
 
 .quem-somos h1{
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 
 .quem-somos-text{
-  font-size: 15px;
+  font-size: 17px;
   margin: 25px;
   background-color: white;
   padding:10px;
