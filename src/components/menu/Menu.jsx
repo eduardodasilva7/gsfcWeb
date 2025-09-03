@@ -1,6 +1,7 @@
 import menuImg from '../../assets/img/menu.png';
 import './Menu.css'
 
+
 function Menu(){
   const abrirMenu = () => {
     document.querySelector('.menuItems').classList.toggle('active');
