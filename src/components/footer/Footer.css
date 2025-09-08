@@ -5,10 +5,14 @@
   display: flex;
   justify-content: space-around;
   padding: 20px;
+  align-items: center;
 }
 
+.direitos h1{
+  font-size: 1.75rem;
+}
 .logo-footer{
-  width: 140px;
+  width: 50px;
   height: auto;
   padding-bottom: 10px;
 }
@@ -19,16 +23,14 @@
 .perguntas {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  height: 100%; 
-  text-align: center;
-
+  height: 100%;   
 }
 
 .perguntas .icones {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .perguntas .icon {
@@ -39,6 +41,11 @@
 .redes-sociais{
   display: flex;
   flex-direction: column;
+}
+
+.redes-sociais a{
+  margin: 5px;
+  font-size: 15px;
 }
 
 @media(max-width: 1000px){
@@ -62,6 +69,7 @@
   .footer{
     flex-direction: column-reverse;
     align-items: center;
+    gap: 20px;
   }
 
   .sede{
@@ -80,5 +88,18 @@
 
   .icon{
     font-size: 20px;
+  }
+
+  .redes-sociais{
+    text-align: start;
+  
+  }
+  .redes-sociais a{
+    margin-left: 22px;
+  }
+
+  .perguntas h3{
+
+    text-align: center;
   }
 }

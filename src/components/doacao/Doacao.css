@@ -1,13 +1,25 @@
-.doacao-container h1{
+@keyframes gridFadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.doacao-container {
+  padding-top: 100px;
+}
+
+.cards h1{
   text-align: center;
   font-size: 36px;
+  color: white;
 }
 
 .cards {
   background-image: url('../../assets/img/doacao.png') ;
   background-size: cover;
   width: 100% ;
-  height: 600px;
+  height: 100%;
 
 }
 
@@ -15,6 +27,9 @@
   width: 45%;
   margin: auto;
   height: 100%;
+  opacity: 0;
+  transform: scale(0.75);
+  animation: gridFadeIn 0.7s ease-out forwards;
 
 }
 
@@ -49,10 +64,11 @@
 
 .textoCartao{
   font-size: 14px;
+
 }
 
 .cartaoDoacao{
-  padding: 0 20px ;
+  padding: 15px 20px ;
 }
 
 .cardSaibaMais{
@@ -66,12 +82,14 @@
 @media(max-width: 1440px)  {
   .textoCartao{
     font-size: 13px;
+
   }
 }
 
 @media(max-width: 1024px)  {
   .textoCartao{
     font-size: 9px;
+
   }
   .cards{
     height: auto;  
@@ -88,4 +106,12 @@
   margin: auto;
   height: 100%;
 }
+
+  .doacao-container {
+    padding-top: 105px;
+  }
+
+  .textoCartao{
+    
+  }
 }

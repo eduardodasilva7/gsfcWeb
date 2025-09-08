@@ -40,6 +40,10 @@ a{
   margin: 10px 0;
 }
 
+.maps{
+  width: 100%;
+}
+
 .esquerda, .direita{
   align-items: center;
   justify-content: center;
@@ -50,7 +54,6 @@ a{
 @media(min-width: 1024px){
   .home-container{
     flex-direction: row;
-
   }
   
   .esquerda, .direita{
@@ -59,10 +62,15 @@ a{
 
   .esquerda{
     padding: 10px 0 10px 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   .direita{
     padding: 10px 20px 10px 0;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
   
   .title{
@@ -101,7 +109,7 @@ a{
 }
 
 @media(min-width: 1440px){
-  .direita .title{
+  .direita .title, .esquerda .title{
     font-size: 25px;
 
   }
@@ -112,8 +120,17 @@ a{
   }
 
   .direita{
-    margin-top: 20px;
+    gap: 20%;
   }
   
 
+}
+
+@media(min-width: 1800px){
+  .direita
+  {
+   margin-top: 50px;
+   
+  }
+  
 }
