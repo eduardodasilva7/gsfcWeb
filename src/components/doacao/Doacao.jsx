@@ -8,8 +8,10 @@ function Doacao() {
   return (
     <div className="doacao-container" id='doacao'>
       <div className='cards' >
-      <h1>Doações</h1>
         <div className='grid-card'>
+        <div className='row' style={{background: 'linear-gradient(90deg,rgba(168, 230, 207, 1) 0%, rgba(181, 234, 215, 1) 100%)'}}>
+          <h1>Doações</h1>
+        </div>
 
           <div className="row linha1">
             <div className="col-12 col-md-6 col-xl-6 cardTitle cartaoDoacao" style={{backgroundColor: '#A8E6CF'}}>

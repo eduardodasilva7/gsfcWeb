@@ -1,7 +1,7 @@
  import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapLocationDot, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import imgEx from '../../assets/img/imgExemplo.png';
+import imgOng from '../../assets/img/imagem-ong.png';
 import imagemMaps from '../../assets/img/imagemMaps.png';
 
 function Home() {
@@ -12,8 +12,8 @@ function Home() {
           <h3 className='subtitle'>Sobre a ONG</h3>
           <h2 className='title'>História e Fundação do Grupo Socorrista Francisco de Assis</h2>
           <p className='text textApresentation'>Fundado em 1990, o Grupo Socorrista Francisco de Assis nasceu com o propósito de estudar e praticar o Espiritismo, promovendo a caridade sem distinções. Ao longo dos anos, mudou de endereço até chegar à sede atual, sempre guiado por amor, fé e dedicação, como a da inesquecível Inês Assumpção.</p>
-          <a href="" className='btn btn-info'>Saiba Mais</a>
-          <img src={imgEx} alt="" className='img imgONG' />
+          <a href="" className='btnInfo'>Saiba Mais</a>
+          <img src={imgOng} alt="" className='img imgONG' />
         </div>
       
       

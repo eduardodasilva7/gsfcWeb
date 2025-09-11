@@ -11,8 +11,8 @@
 
 .cards h1{
   text-align: center;
-  font-size: 36px;
-  color: white;
+  font-size: 30px;
+  padding: 10px 0;
 }
 
 .cards {
@@ -111,7 +111,5 @@
     padding-top: 105px;
   }
 
-  .textoCartao{
-    
-  }
+  
 }
