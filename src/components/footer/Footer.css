@@ -1,6 +1,6 @@
 .footer{
   width: 100%;
-  background-color: white;/* #DDEAD0*/
+  background-color: #307063;/* #DDEAD0*/
   height: auto;
   display: flex;
   justify-content: space-around;
@@ -9,8 +9,13 @@
   padding-bottom: 5px;
 }
 
+.footer p, .footer h3 {
+  color: white;
+}
+
 .direitos h1{
   font-size: 1.75rem;
+  color: white;
 }
 .logo-footer{
   width: 50px;
@@ -21,6 +26,9 @@
 .sede{
   width: 20%;
 }
+
+
+
 .perguntas {
   display: flex;
   flex-direction: column;

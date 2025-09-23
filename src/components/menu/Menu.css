@@ -3,8 +3,7 @@
   height: 106px;
   align-items: center;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.253);
-  background-color: #DDEAD0;
-
+  background-color: #307063;
   position: fixed;
   z-index: 100;
 
@@ -18,7 +17,7 @@
 }
 
 .logo{
-  content: url('../../assets/img/logoP-remove.png');
+  content: url('../../assets/img/logoP-remove-preto.png');
   height: 45px;
   width: auto; 
 }
@@ -53,7 +52,7 @@
 a{
   text-decoration: none;
   font-size: 20px;
-  color: #740B0D;
+  color: #fff;
 }
 
 .btnNav{
@@ -76,7 +75,7 @@ a{
   }
   
   .logo{
-    content: url('../../assets/img/logoG-remove.png');
+    content: url('../../assets/img/logoG-remove-preto.png');
     height: 65px;
   }
 
@@ -114,6 +113,7 @@ a{
 @media(min-width: 1440px){
   .menu{
     padding: 0 30px;
+
   }
   
   a{
