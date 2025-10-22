@@ -10,7 +10,7 @@ function Menu(){
   return(
     <div className='menu'>
       <div className='menuImg'>
-        <img src="" alt="" className='logo' id='logo'/>
+        <img className='logo' id='logo'/>
         <img src={menuImg} alt="" className='logomenu' onClick={abrirMenu}/>
       </div>
       <nav> 

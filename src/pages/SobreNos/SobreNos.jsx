@@ -4,11 +4,13 @@ import Footer from '../../components/footer/Footer.jsx';
 
 const SobreNos = () => {
   return (
-    <>
-      <Menu />
-      <QuemSomos />
-      <Footer />
-    </>
+    <div className="quemSomos">
+      
+        <Menu />
+        <QuemSomos />
+        <Footer />
+      
+    </div>
   );
 }
 export default SobreNos;
