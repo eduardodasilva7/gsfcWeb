@@ -1,0 +1,143 @@
+.ong-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.title{
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0;
+  max-width: 100%;
+}
+
+.btnInfo{
+  background-color: #742223;
+  padding: 7px 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.subtitle{
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text{
+  font-size: 12px;
+  color: #424242;
+}
+
+.textLogradouro{
+  font-size: 14px;
+  text-align: center;
+  margin: 13px 50px;
+}
+
+a{
+  margin: 12px 0;
+}
+
+.btnMaps{
+  font-size: 14px;
+  margin: 10px 0;
+  color: black;
+}
+
+.img{
+  width: 100%;
+}
+
+.maps{
+  width: 100%;
+
+}
+
+.esquerda, .direita{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}  
+
+
+
+@media(min-width: 1024px){
+  .ong-container{
+    flex-direction: row;
+  }
+  
+  .esquerda, .direita{
+    width: 50%;
+
+  }
+
+  .esquerda{
+    padding: 10px 0 10px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .direita{
+    padding: 10px 20px 10px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title{
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .subtitle{
+    font-size: 22px;
+    margin-top: 19px;
+  }
+
+  .text{
+    font-size: 18px;
+  }
+
+  .textLogradouro{
+    font-size: 14px;
+    margin: 13px 100px;
+  }
+
+  .btn-info{
+    font-size: 18px;
+    margin: 25px 0;
+  }
+
+  .btnMaps{
+    font-size: 20px;
+  }
+
+  .imgONG{
+    width: 500px;
+    height: 250px;
+  }
+
+}
+
+@media(min-width: 1440px){
+  .direita .title, .esquerda .title{
+    font-size: 25px;
+  }
+
+  .direita{
+    padding: 10px 20px 10px 0;
+    margin-top: 30px;
+  }
+
+  .imgMapa{
+    width: 490px;
+    height: 330px;
+  }
+  
+
+}
+

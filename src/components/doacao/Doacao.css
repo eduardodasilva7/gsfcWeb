@@ -1,115 +1,115 @@
-@keyframes gridFadeIn {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+.doacao-container{
+  width: 100%;
+  height: 100%;
+}
+.imgDoacao{
+  width: 100%;
+  height: auto;
 }
 
-/* .doacao-container {
-  padding-top: 100px;
-} */
-
-.cards h1{
+.titleDoacao{
   text-align: center;
-  font-size: 30px;
-  padding: 10px 0;
+  margin: 10px;
 }
 
-.cards {
-  background-image: url('../../assets/img/doacao.png') ;
-  background-size: cover;
-  width: 100% ;
-  height: 100%;
-
+.textDoacao{
+   margin: 12px;
+   font-size: 20px;
 }
 
-.grid-card{
-  width: 45%;
-  margin: auto;
-  height: 100%;
-  opacity: 0;
-  transform: scale(0.75);
-  animation: gridFadeIn 0.7s ease-out forwards;
-
-}
-
-.linha1{
-  height: 35%; 
-}
-
-.linha2{
-  height: 42.5%;
-}
-
-.linha3{
-  height: 22.5%; 
-}
-
-.title{
-  font-size: 32px;
-}
-
-.cardTitle{
+.cards, .cartoes{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
+}
+
+.cartaoDoacao{
+  margin: 10px;
+  background-color: #307063;
+  width: 280px;
+  height: 370px;
+  border-radius: 20px;
 }
 
 .titulosCartao{
   text-align: center;
-  font-size: 24px;
-  margin-top: 0.5rem;
+  margin: 10px auto;
+  color: white;
+  width: 50%;  
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 5px; 
+  justify-content: center; 
 }
 
 .textoCartao{
-  font-size: 14px;
+  font-size: 18px;
+  margin: 20px; 
+  color: white;
 
 }
 
-.cartaoDoacao{
-  padding: 15px 20px ;
-}
-
-.cardSaibaMais{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-@media(max-width: 1440px)  {
-  .textoCartao{
-    font-size: 13px;
-
-  }
-}
-
-@media(max-width: 1024px)  {
-  .textoCartao{
-    font-size: 9px;
-
-  }
-  .cards{
-    height: auto;  
-  }
-}
-
-@media(max-width: 768px)  {
-  .cards{
-    height: auto;
-    
-  }
-  .grid-card{
-  width: 60%;
-  margin: auto;
-  height: 100%;
-}
-
-  .doacao-container {
-    padding-top: 105px;
-  }
-
+.btnSaibaMais{
+  border: none;
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 25px;
+  background-color: #740B0D;
+  color: #ffffff;
   
+}
+
+@media(min-width: 700px){
+  .cartoes{
+    flex-direction: row;
+  }
+  .btnSaibaMais{
+   
+   margin: 20px;
+  }
+
+  .textoCartao{
+    font-size: 16px;
+  }
+
+  .cartaoDoacao{
+
+  width: 230px;
+  height: 370px;
+
+  }
+
+    .titulosCartao{
+    
+    font-size: 22px;
+  }
+
+}
+@media(min-width: 1000px){
+  .cartaoDoacao{
+
+    width: 280px;
+    height: 370px;
+  
+  }
+
+   .textoCartao{
+    font-size: 18px;
+  }
+
+  .imgDoacao{
+    height: 500px;
+  }
+}
+@media(min-width: 1400px){
+  .cartaoDoacao{
+
+    width: 280px;
+    height: 370px;
+    margin: 10px 25px
+  }
+
+   .textoCartao{
+    font-size: 18px;
+  }
 }
