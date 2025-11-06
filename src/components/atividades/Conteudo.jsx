@@ -1,4 +1,6 @@
 import React, { useState,} from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import './conteudo.css'
 import Palestras from "../../assets/img/Palestras.jpg";
 import Aprendizes from "../../assets/img/Aprendizes.jpg";
@@ -8,8 +10,6 @@ import Juventude from "../../assets/img/Juventude.jpg";
 import Eventos from "../../assets/img/Eventos.jpg";
 
 function Conteudo() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
   const conteudos = [
     {
       titulo: "Gestantes e Crianças",
@@ -30,67 +30,105 @@ function Conteudo() {
       descricao: "Quarta-feira às 14:00h e 19:30h",
       imagem: Aprendizes,
       texto:
-        "A Escola de Aprendizes do Evangelho propicia o estudo da Doutrina Espírita em suas três dimensões: religiosa, filosófica e científica. O estudo do Evangelho que nos foi legado por Jesus Cristo e seu entendimento à luz da razão possibilita o trabalho de desenvolvimento individual, propiciando a melhora em nosso relacionamento com a sociedade. A Filosofia nos ajuda no trabalho de autoconhecimento, incentivando o processo de evolução contínua, enquanto a Científica permite que desenvolvamos a fé raciocinada e baseada em princípios universais."
+        "A Escola de Aprendizes do Evangelho propicia o estudo da Doutrina Espírita em suas três dimensões: religiosa, filosófica e científica. O estudo do Evangelho que nos foi legado por Jesus Cristo e seu entendimento à luz da razão possibilita o trabalho de desenvolvimento individual, propiciando a melhora em nosso relacionamento com a sociedade.",
     },
     {
       titulo: "Palestras Públicas",
       descricao: "Segunda e Terça às 19:45h — Quinta às 14:45h",
       imagem: Palestras,
       texto:
-        "Em nossas palestras públicas apresentamos temas evangélicos destinados a promover a autoreflexão dos participantes em temas de interesse individual. Saúde, sentimentos, relacionamento, emoções e Evangelho de Jesus são temas que promovem reflexão do indivíduo quanto ao seu relacionamento com a família e a comunidade. Esteja convidado a participar de nossas palestras nos dias programados.",
+        "Em nossas palestras públicas apresentamos temas evangélicos destinados a promover a autoreflexão dos participantes em temas de interesse individual. Saúde, sentimentos, relacionamento, emoções e Evangelho de Jesus são temas que promovem reflexão do indivíduo quanto ao seu relacionamento com a família e a comunidade.",
     },
     {
       titulo: "Juventude",
       descricao: "Quinta-feira às 19:45h",
       imagem: Juventude,
       texto:
-        "Por meio de atividades lúdicas, palestras, artesanato e passes, a ética e moral cristã é trabalhada com os jovens entre oito e dezoito anos, transmitindo os ensinamentos de nosso mestre Jesus com leveza e alegria."
+        "Por meio de atividades lúdicas, palestras, artesanato e passes, a ética e moral cristã é trabalhada com os jovens entre oito e dezoito anos, transmitindo os ensinamentos de nosso mestre Jesus com leveza e alegria.",
     },
     {
       titulo: "Eventos",
       imagem: Eventos,
       texto:
-        "Nossos eventos periódicos objetivam o congraçamento entre os trabalhadores e assistidos da casa, além da arrecadação de fundos para manutenção de nossas atividades. Realizamos anualmente o Bazar de Dias das Mães e o Bazar de Natal e, quinzenalmente, o Bazar da Pechincha com artigos usados, mas em boas condições, que são vendidos a preço simbólico. Periodicamente nos encontramos para nossos Almoços ou Chá da Tarde, cujas datas são divulgadas em nossas mídias sociais, cujo convite é extensivo a todos os frequentadores da casa."
-    }
+        "Nossos eventos periódicos objetivam o congraçamento entre os trabalhadores e assistidos da casa, além da arrecadação de fundos para manutenção de nossas atividades. Realizamos anualmente o Bazar de Dias das Mães e o Bazar de Natal e, quinzenalmente, o Bazar da Pechincha com artigos usados, mas em boas condições, que são vendidos a preço simbólico.",
+    },
   ];
 
   return (
-    <div className="atividades">
-      <h1>Atividades</h1>
+    <div className="atividades container my-5">
+      <h1 className="text-center mb-4">Atividades</h1>
 
-      <div className="carousel-wrapper">
-        <div
-          className="carousel-track"
-          style={{
-            transform: `translateX(-${activeIndex * 100}%)`,
-            transition: "transform 0.6s ease",
-            display: "flex",
-          }}
-        >
-          {conteudos.map((item, i) => (
-            <div className="carousel-item" key={i} style={{ minWidth: "100%" }}>
-              <div className="carousel-image-container">
-                <img src={item.imagem} alt={item.titulo} loading="lazy" />
-              </div>
-              <div className="carousel-text">
-                <h3>{item.titulo}</h3>
-                {item.descricao && <p className="descricao">{item.descricao}</p>}
-                <p>{item.texto}</p>
+      <div
+        id="atividadesCarousel"
+        className="carousel slide"
+        data-bs-ride="carousel"
+      >
+        {/* Indicadores */}
+        <div className="carousel-indicators">
+          {conteudos.map((_, index) => (
+            <button
+              key={index}
+              type="button"
+              data-bs-target="#atividadesCarousel"
+              data-bs-slide-to={index}
+              className={index === 0 ? "active" : ""}
+              aria-current={index === 0 ? "true" : "false"}
+              aria-label={`Slide ${index + 1}`}
+            ></button>
+          ))}
+        </div>
+
+        {/* Slides */}
+        <div className="carousel-inner">
+          {conteudos.map((item, index) => (
+            <div
+              className={`carousel-item ${index === 0 ? "active" : ""}`}
+              key={index}
+            >
+              <div className="d-flex flex-column align-items-center">
+                <img
+                  src={item.imagem}
+                  className="d-block w-75 rounded mb-4"
+                  alt={item.titulo}
+                  style={{ maxHeight: "350px", objectFit: "cover" }}
+                />
+                <div className="carousel-caption d-block text-dark bg-light p-4 rounded shadow-sm">
+                  <h3>{item.titulo}</h3>
+                  {item.descricao && (
+                    <p className="fw-semibold">{item.descricao}</p>
+                  )}
+                  <p>{item.texto}</p>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Pontinhos (único controle) */}
-        <div className="carousel-dots">
-          {conteudos.map((_, i) => (
-            <span
-              key={i}
-              className={`dot ${i === activeIndex ? "active" : ""}`}
-              onClick={() => setActiveIndex(i)}
-            ></span>
-          ))}
-        </div>
+        {/* Controles */}
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#atividadesCarousel"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon bg-dark rounded-circle"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Anterior</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#atividadesCarousel"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon bg-dark rounded-circle"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Próximo</span>
+        </button>
       </div>
     </div>
   );
