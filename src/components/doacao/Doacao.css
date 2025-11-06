@@ -60,6 +60,15 @@
 }
 
 @media(min-width: 700px){
+  .doacao-container{
+    width: 100%;
+    padding: 0 10rem;
+  }
+
+  .imgDoacao{
+    width: 100%s;
+  }
+  
   .cartoes{
     flex-direction: row;
   }
@@ -86,6 +95,11 @@
 
 }
 @media(min-width: 1000px){
+  .doacao-container{
+
+    padding: 0 15rem;
+  }
+  
   .cartaoDoacao{
 
     width: 280px;
@@ -112,4 +126,10 @@
    .textoCartao{
     font-size: 18px;
   }
+
+  .doacao-container{
+
+    padding: 0 25rem;
+  }
+  
 }

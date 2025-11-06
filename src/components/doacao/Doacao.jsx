@@ -18,17 +18,22 @@ function Doacao() {
       <div className='cards' >
         <div className="cartoes">
           <div className="cartaoDoacao" >
-            <h3 className='titulosCartao'>Rotary</h3>
-            <p className='textoCartao'>O Rotary é uma organização internacional de voluntários, presente em diversos países, que atua em projetos sociais, humanitários e educacionais. Ele apoia iniciativas que melhoram comunidades locais, incluindo campanhas de arrecadação de alimentos e produtos essenciais.</p>
-          </div>
-          <div className="cartaoDoacao" >
-            <h3 className='titulosCartao'>Avulsos</h3>
-            <p className='textoCartao'>O termo “avulso” refere-se a doações feitas de maneira independente, sem necessidade de vínculo ou inscrição em uma campanha contínua. A pessoa pode doar um item ou uma quantidade pontual, de acordo com sua disponibilidade.</p>
-          </div>
-          <div className="cartaoDoacao" >
+
             <h3 className='titulosCartao'>Drive-Thru</h3>
             <p className='textoCartao'>O drive-thru de doações é um modelo prático em que a pessoa não precisa sair do carro. Ela passa por um ponto de coleta e entrega os itens diretamente aos voluntários, de forma rápida, segura e organizada.</p>
           </div>
+
+          <div className="cartaoDoacao" >
+            <h3 className='titulosCartao'>Rotary</h3>
+            <p className='textoCartao'>O Rotary é uma organização internacional de voluntários, presente em diversos países, que atua em projetos sociais, humanitários e educacionais. Ele apoia iniciativas que melhoram comunidades locais, incluindo campanhas de arrecadação de alimentos e produtos essenciais.
+</p>
+          </div>
+
+          <div className="cartaoDoacao" >
+            <h3 className='titulosCartao'>Avulsos</h3>
+            <p className='textoCartao'> O termo “avulso” refere-se a doações feitas de maneira independente, sem necessidade de vínculo ou inscrição em uma campanha contínua. A pessoa pode doar um item ou uma quantidade pontual, de acordo com sua disponibilidade.</p>
+          </div>
+          
         </div>
         <button className='btnSaibaMais'> Saiba Mais</button>
       </div>

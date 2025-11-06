@@ -16,20 +16,42 @@
 @media(min-width: 700px) {
   .textHome{
     font-size: 24px;
-    margin: 1rem 7rem;
+   
+  }
+
+  .home-container{
+    margin: 0 10rem;
   }
 }
 @media(min-width: 1000px) {
   .imgHome{
     height: 500px;
-    width: 100vw;
+    width: 100%;
     
   }
 
   .textHome{
     font-size: 24px;
-    margin: 1rem 10rem;
+    margin: 1rem 0;
   }
 
 
+}
+
+@media(min-width: 1020px) {
+  .textHome{
+    font-size: 24px;
+   
+  }
+
+  .home-container{
+    margin: 0 15rem;
+  }
+}
+@media(min-width: 1444px) {
+  
+
+  .home-container{
+    margin: 0 25rem;
+  }
 }

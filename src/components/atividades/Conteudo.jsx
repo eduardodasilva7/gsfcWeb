@@ -9,6 +9,7 @@ import Gestantes from "../../assets/img/Gestantes.jpg";
 import Juventude from "../../assets/img/Juventude.jpg";
 import Eventos from "../../assets/img/Eventos.jpg";
 
+
 function Conteudo() {
   const conteudos = [
     {
@@ -135,6 +136,3 @@ function Conteudo() {
 }
 
 export default Conteudo;
-
-
-
