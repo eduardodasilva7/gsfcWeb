@@ -6,11 +6,11 @@ import img3 from '../../assets/img/logoG.png'
 function Carrosel() {
 
   return (
-    <div className="carousel" >
-      <div className="cartao" style={{backgroundImage: `url(${img})`}}></div>
-      <div className="cartao" style={{backgroundImage: `url(${img2})`}}></div>
-      <div className="cartao" style={{backgroundImage: `url(${img3})`}}></div>
-      <div className="cartao" style={{backgroundImage: `url(${img})`}}></div>
+    <div className="quem-carousel" >
+      <div className="quem-cartao" style={{backgroundImage: `url(${img})`}}></div>
+      <div className="quem-cartao" style={{backgroundImage: `url(${img2})`}}></div>
+      <div className="quem-cartao" style={{backgroundImage: `url(${img3})`}}></div>
+      <div className="quem-cartao" style={{backgroundImage: `url(${img})`}}></div>
       
       
 
