@@ -1,3 +1,4 @@
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -9,12 +10,14 @@
 
 .atividades h3 {
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .atividades h1 {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .conteudo-item {
@@ -194,7 +197,7 @@
 }
 
 
-/* DOTS */
+
 .carousel-dots {
   display: flex;
   justify-content: center;
@@ -219,7 +222,9 @@
   background-color: #307063;
 }
 
-@media only screen and (max-width: 610px) {
+
+
+@media only screen and (max-width: 600px) {
   .menu-container {
     flex-direction: column;
     align-items: flex-start;
@@ -235,12 +240,9 @@
     display: block;
     align-items: center;
     font-size: 36px;
-    /* maior */
     color: black;
     background: none;
-    /* sem fundo */
     border: none;
-    /* sem borda */
     cursor: pointer;
     margin-left: auto;
   }
@@ -250,7 +252,7 @@
     width: 100%;
     gap: 10px;
     display: none;
-    /* escondido por padrão */
+
   }
 
   .menu-nav.open {
@@ -284,7 +286,6 @@
     padding: 10px 0;
   }
 
-  /* Cartões empilhados */
   .carousel-card {
     width: 100%;
     max-width: 95%;
@@ -297,7 +298,7 @@
     flex-direction: column;
   }
 
-  /* Container da imagem */
+
   .carousel-image-container {
     width: 100%;
     display: flex;
@@ -307,16 +308,15 @@
     background-color: #fff;
   }
 
-  /* Imagem ajustada e proporcional */
+
   .carousel-image-container img {
     width: 100%;
-    max-height: 200px; /* impede de ultrapassar */
+    max-height: 200px; 
     height: auto;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
   }
 
-  /* Texto centralizado abaixo da imagem */
   .carousel-text {
     padding: 15px;
     text-align: center;
@@ -337,7 +337,6 @@
     line-height: 1.4;
   }
 
-  /* Remove setas e pontinhos */
   .carousel-arrow,
   .carousel-dots {
     display: none !important;

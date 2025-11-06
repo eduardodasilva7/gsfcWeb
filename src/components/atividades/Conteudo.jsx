@@ -1,11 +1,12 @@
-import React, { useState,} from "react";
-import './conteudo.css'
+import React, { useState } from "react";
+import "./conteudo.css"
 import Palestras from "../../assets/img/Palestras.jpg";
 import Aprendizes from "../../assets/img/Aprendizes.jpg";
 import Espiritual from "../../assets/img/Espiritual.jpg";
 import Gestantes from "../../assets/img/Gestantes.jpg";
 import Juventude from "../../assets/img/Juventude.jpg";
 import Eventos from "../../assets/img/Eventos.jpg";
+
 
 function Conteudo() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -97,6 +98,3 @@ function Conteudo() {
 }
 
 export default Conteudo;
-
-
-
