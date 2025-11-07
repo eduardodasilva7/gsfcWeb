@@ -35,6 +35,11 @@
   height: 100%;   
 }
 
+.icones{
+  color: white;
+  text-decoration: none;
+}
+
 .perguntas .icones {
   display: flex;
   flex-direction: column;
@@ -52,9 +57,11 @@
   flex-direction: column;
 }
 
-.redes-sociais a{
+.redes-sociais-icones{
   margin: 5px;
   font-size: 18px;
+  color: white;
+  text-decoration: none;
 }
 
 .redes-sociais h3{
@@ -107,7 +114,7 @@
     text-align: start;
   
   }
-  .redes-sociais a{
+  .redes-sociais-icones{
     margin-left: 22px;
   }
 

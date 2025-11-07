@@ -31,7 +31,7 @@
 
 .menuItems{
   text-align: center;
-  background-color: #D9D9D9;
+  background-color: #307063;
   border-radius: 0 0 22px 22px;
   max-height: 0;
   overflow: hidden;
@@ -50,13 +50,12 @@
   padding: 23px 0;
 }
 
-a{
-  text-decoration: none;
-  font-size: 20px;
-  color: #fff;
-}
+
 
 .btnNav{
+   text-decoration: none;
+  font-size: 20px;
+  color: #fff;
   transition: all 0.3s ease-out;
 }
 
@@ -96,7 +95,7 @@ a{
 
   }
 
-  a{
+  .btnNav{
     font-size: 14px;
   }
 }
@@ -106,7 +105,7 @@ a{
     padding: 0 25px;
   }
 
-  a{
+  .btnNav{
     font-size: 19px;
   }
 }
@@ -117,7 +116,7 @@ a{
 
   }
   
-  a{
+  .btnNav{
     font-size: 22px;
   }
 

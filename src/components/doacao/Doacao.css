@@ -71,6 +71,7 @@
   
   .cartoes{
     flex-direction: row;
+    padding: 0 20 px;
   }
   .btnSaibaMais{
    
@@ -78,19 +79,18 @@
   }
 
   .textoCartao{
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .cartaoDoacao{
 
-  width: 230px;
-  height: 370px;
-
+    width: 170px;
+    height: 350px;
+    
   }
 
-    .titulosCartao{
-    
-    font-size: 22px;
+  .titulosCartao{
+    font-size: 15px;
   }
 
 }

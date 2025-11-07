@@ -39,6 +39,7 @@
 
 a{
   margin: 12px 0;
+  text-decoration: none;
 }
 
 .btnMaps{
@@ -67,23 +68,20 @@ a{
 
 
 @media(min-width: 1024px){
-  .ong-container{
-    flex-direction: row;
-  }
   
   .esquerda, .direita{
-    width: 50%;
+    width: 70%;
 
   }
 
   .esquerda{
-    padding: 10px 0 10px 20px;
+    /* padding: 10px 0 10px 20px; */
     justify-content: center;
     align-items: center;
   }
 
   .direita{
-    padding: 10px 20px 10px 0;
+    /* padding: 10px 20px 10px 0; */
     justify-content: center;
     align-items: center;
   }
@@ -117,27 +115,28 @@ a{
   }
 
   .imgONG{
-    width: 500px;
-    height: 250px;
+    width: 600px;
+    height: 300px;
   }
 
 }
 
-@media(min-width: 1440px){
+@media(min-width: 1435px){
   .direita .title, .esquerda .title{
     font-size: 25px;
   }
 
   .direita{
-    padding: 10px 20px 10px 0;
     margin-top: 30px;
   }
 
   .imgMapa{
-    width: 490px;
-    height: 330px;
+    width: 700px;
+    height: 370px;
   }
   
-
+  .textApresentation{
+    padding: 2rem 20rem;
+  }
 }
 

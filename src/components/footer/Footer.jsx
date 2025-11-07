@@ -29,7 +29,7 @@ function Footer() {
 
       <div className="redes-sociais">
         <h3>Redes Sociais</h3>
-        <a href="https://www.instagram.com/gruposocorristafrancisco/" target='_blank' >
+        <a href="https://www.instagram.com/gruposocorristafrancisco/" target='_blank' className='icones' >
           <FontAwesomeIcon icon={faInstagram} className='icon' /> 
           Instagram
         </a>
@@ -37,7 +37,7 @@ function Footer() {
           <FontAwesomeIcon icon={faFacebook} className='icon' />
           Facebook 
         </a>
-        <a href="" >
+        <a href="" className='icones'>
           <FontAwesomeIcon icon={faEnvelope} className='icon' />
           Email
         </a>
