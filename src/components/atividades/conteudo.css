@@ -137,7 +137,7 @@
   background-color: #307063;
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 600px) {
   .menu-container {
     flex-direction: column;
     align-items: flex-start;
@@ -184,82 +184,45 @@
     padding: 0 10px 10px;
   }
 
-.carousel-wrapper {
-    overflow: visible !important;
+ .carousel-caption {
+    max-width: 90%;
+    font-size: 0.9rem;
+    padding: 10px;
   }
 
-  .carousel-track {
-    display: flex;
-    flex-direction: column;
-    transform: none !important;
-    transition: none !important;
+  .carousel-caption h5,
+  .carousel-caption p {
+    font-size: 0.9rem;
+    line-height: 1.3;
   }
 
-  .carousel-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 50%;
+    width: 25px;
+    height: 25px;
   }
 
-  /* Cartões empilhados */
-  .carousel-card {
-    width: 100%;
-    max-width: 95%;
-    margin: 0 auto 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    background-color: #f2ede4;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+  .carousel-indicators {
+    margin-bottom: 4px;
+    bottom: 5px;
   }
 
-  /* Container da imagem */
-  .carousel-image-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-color: #fff;
+  .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    margin: 2px;
   }
 
-  /* Imagem ajustada e proporcional */
-  .carousel-image-container img {
-    width: 100%;
-    max-height: 200px; /* impede de ultrapassar */
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
+  .dot {
+    width: 8px;
+    height: 8px;
   }
 
-  /* Texto centralizado abaixo da imagem */
-  .carousel-text {
-    padding: 15px;
-    text-align: center;
+  .dot:hover {
+    transform: scale(1.1);
   }
 
-  .carousel-text h3 {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-
-  .carousel-text .descricao {
-    font-size: 14px;
-    margin-bottom: 6px;
-  }
-
-  .carousel-text p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
-  /* Remove setas e pontinhos */
-  .carousel-arrow,
-  .carousel-dots {
-    display: none !important;
-  }
 
 }
 
