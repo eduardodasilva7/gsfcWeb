@@ -1,0 +1,210 @@
+.info-doacao-container{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  margin-right: 10px;
+}
+
+.info-doacao-title{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.tabela-doacao-content{
+  display: flex;
+  background-color: #307063;
+  flex-direction: column;
+  width: 270px;
+  padding: 15px;
+  border-radius: 25px;
+  align-self: center;
+  
+}
+
+.tabela-doacao-titles{
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabela-doacao-texts{
+  font-size: 12px;
+  color: white;
+  padding-right: 5px;
+  border-right: 1px solid white;
+}
+
+.tabela-doacao-texts:last-child {
+  border-right: none; 
+}
+
+.tabela-doacao-texts:hover{
+  color: #740B0D;
+  font-weight: bold;
+}
+
+.tabela-doacao-valores{
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabela-doacao-valor{
+  font-size: 24px;
+  background-color: white;
+  padding: 5px;
+}
+
+.tabela-doacao-infos{
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabela-doacao-infos-text{
+  font-size: 12px;
+  color: white;
+}
+
+.info-relatorio-title{
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.info-relatorio-subtitle{
+  font-size: 14px;
+  text-align: center;
+  align-self: center;
+  margin: 10px;
+  width: 85%;
+  margin-bottom: 20px;
+}
+
+.info-relatorio-cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.info-relatorio-card{
+  border: 3px solid #307063;
+  border-radius: 20px;
+  width: 90%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-relatorio-card-img{
+  width: 70px;
+  height: auto;
+  margin-bottom: 10px;
+
+}
+
+.info-relatorio-card-title{
+  font-size: 24px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.info-relatorio-card-text{
+  font-size: 16px;
+ 
+  margin: 5px 0;
+}
+
+
+
+@media(min-width: 425px ){
+  .tabela-doacao-content{
+    width: 380px;
+  }
+
+  .tabela-doacao-texts{
+    font-size: 17px;
+  }
+
+  .tabela-doacao-valor{
+    font-size: 35px;
+  }
+
+  .tabela-doacao-infos-text{
+    font-size: 15px;
+  }
+}
+
+@media(min-width: 700px ){
+  .tabela-doacao-content{
+    width: 690px;
+  }
+
+  .tabela-doacao-titles{
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .tabela-doacao-texts{
+    font-size: 25px;
+    padding-right: 20px;
+  }
+
+  .tabela-doacao-valor{
+    font-size: 50px;
+  }
+
+  .tabela-doacao-infos-text{
+    font-size: 25px;
+  }
+
+  .info-relatorio-title{
+    font-size: 24px;
+  }
+
+  .info-relatorio-subtitle{
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media(min-width: 900px ){
+  .info-relatorio-cards{
+    flex-direction: row;
+    padding: 0 20px;
+  }
+
+  .card-centro{
+  background-color: #307063;
+  }
+
+  .card-centro .info-relatorio-card-title,
+  .card-centro .info-relatorio-card-text{
+    color: white;
+  }
+
+}
+
+@media(min-width: 1400px ){
+  .tabela-doacao-content{
+    width: 800px;
+  }
+
+  .tabela-doacao-texts{
+    font-size: 30px;
+  }
+
+  .tabela-doacao-valor{
+    font-size: 60px;
+  }
+
+  .tabela-doacao-infos-text{
+    font-size: 30px;
+  }
+
+  .info-relatorio-subtitle{
+    font-size: 25px;
+
+  }
+}

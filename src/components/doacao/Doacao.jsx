@@ -1,10 +1,18 @@
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import './Doacao.css'
-import imgDoacao from '../../assets/img/doacao.png'
+import './Doacao.css';
+import imgDoacao from '../../assets/img/doacao.png';
+import { useNavigate } from 'react-router-dom';
 
 
 function Doacao() {
+
+  const navigate = useNavigate();
+
+  const pageInfo = () => {
+    navigate('/informativos')
+  }
+
   return (
     <div className="doacao-container" id='doacao'>
         
@@ -35,7 +43,7 @@ function Doacao() {
           </div>
           
         </div>
-        <button className='btnSaibaMais'> Saiba Mais</button>
+        <button className='btnSaibaMais' onClick={pageInfo}> Saiba Mais</button>
       </div>
 
 

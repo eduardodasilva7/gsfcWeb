@@ -1,4 +1,6 @@
-
+#atividades {
+  scroll-margin-top: 100px; 
+}
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
