@@ -140,11 +140,7 @@
   background-color: #307063;
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 12b12ad53dd77628fdcd9aa582ed8c3b88e2c8f7
+/* teste*/ 
 @media only screen and (max-width: 600px) {
   .menu-container {
     flex-direction: column;
