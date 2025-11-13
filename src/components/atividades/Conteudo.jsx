@@ -56,9 +56,8 @@ function Conteudo() {
   ];
 
   return (
-    <div className="atividades container my-5">
-      <h1 className="text-center mb-4">Atividades</h1>
-
+    <div className="atividades container my-5" id="atividades">
+      <h1 className="text-center mb-4">Atividades</h1> 
       <div
         id="atividadesCarousel"
         className="carousel slide"
@@ -104,6 +103,7 @@ function Conteudo() {
             </div>
           ))}
         </div>
+        
 
         {/* Controles */}
         <button
@@ -132,6 +132,7 @@ function Conteudo() {
         </button>
       </div>
     </div>
+    
   );
 }
 

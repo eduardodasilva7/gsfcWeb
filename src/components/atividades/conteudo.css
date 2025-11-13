@@ -140,6 +140,10 @@
   background-color: #307063;
 }
 
+#atividades {
+  scroll-margin-top: 140px; /* ajuste conforme a altura do seu header */
+}
+
 
 @media only screen and (max-width: 600px) {
   .menu-container {
