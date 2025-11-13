@@ -142,11 +142,17 @@
   background-color: #307063;
 }
 
+<<<<<<< HEAD
 #atividades {
   scroll-margin-top: 140px; /* ajuste conforme a altura do seu header */
 }
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f076bcfdd16510c50671659965857f374164217d
 
 
+>>>>>>> 12b12ad53dd77628fdcd9aa582ed8c3b88e2c8f7
 @media only screen and (max-width: 600px) {
   .menu-container {
     flex-direction: column;
@@ -210,7 +216,11 @@
     height: 25px;
   }
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> f076bcfdd16510c50671659965857f374164217d
   .carousel-indicators {
     margin-bottom: 4px;
     bottom: 5px;
@@ -231,7 +241,11 @@
     transform: scale(1.1);
   }
 
+<<<<<<< HEAD
  
+=======
+=======
+>>>>>>> f076bcfdd16510c50671659965857f374164217d
   .carousel-card {
     width: 100%;
     max-width: 95%;
@@ -287,6 +301,7 @@
   .carousel-dots {
     display: none !important;
   }
+>>>>>>> 12b12ad53dd77628fdcd9aa582ed8c3b88e2c8f7
 
 
 }

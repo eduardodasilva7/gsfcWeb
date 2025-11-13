@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React from "react";
+=======
+import React, { useState,} from "react";
+>>>>>>> f076bcfdd16510c50671659965857f374164217d
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import './conteudo.css'
@@ -57,6 +61,7 @@ function Conteudo() {
 
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div className="atividades container my-5" id="atividades">
       <h1 className="text-center mb-4">Atividades</h1> 
 =======
@@ -64,6 +69,11 @@ function Conteudo() {
       <h1 className="text-center mb-4" >Atividades</h1>
 
 >>>>>>> d316d2de7b9bda11904af213409beb7ed007d0b2
+=======
+    <div className="atividades container my-5">
+      <h1 className="text-center mb-4">Atividades</h1>
+
+>>>>>>> f076bcfdd16510c50671659965857f374164217d
       <div
         id="atividadesCarousel"
         className="carousel slide"
