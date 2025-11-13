@@ -56,8 +56,14 @@ function Conteudo() {
   ];
 
   return (
+<<<<<<< HEAD
     <div className="atividades container my-5" id="atividades">
       <h1 className="text-center mb-4">Atividades</h1> 
+=======
+    <div className="atividades container my-5" id="atividades" >
+      <h1 className="text-center mb-4" >Atividades</h1>
+
+>>>>>>> d316d2de7b9bda11904af213409beb7ed007d0b2
       <div
         id="atividadesCarousel"
         className="carousel slide"
