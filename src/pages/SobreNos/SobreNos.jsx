@@ -4,10 +4,10 @@ import Footer from '../../components/footer/Footer.jsx';
 
 const SobreNos = () => {
   return (
-    <div className="quemSomos">
+    <div className="quemSomos" >
       
         <Menu />
-        <QuemSomos />
+        <QuemSomos id='quemSomos' style={{ scrollMarginTop: "100px" }}/>
         <Footer />
       
     </div>
