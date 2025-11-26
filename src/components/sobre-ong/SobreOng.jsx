@@ -3,8 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapLocationDot, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import imgOng from '../../assets/img/imagem-ong.png';
 import imagemMaps from '../../assets/img/imagemMaps.png';
+import { useNavigate } from 'react-router-dom';
 
 function Ong() {
+
+  const navigate = useNavigate();
+
+  const pageQuemSomos = () => {
+    navigate('quem-somos')
+  }
+
   return (
     <div className="ong-container" id='ong'>
         <div className="esquerda">
@@ -12,7 +20,7 @@ function Ong() {
           <h3 className='subtitle'>Sobre a ONG</h3>
           <h2 className='title'>História e Fundação do Grupo Socorrista Francisco de Assis</h2>
           <p className='text textApresentation'>Fundado em 1990, o Grupo Socorrista Francisco de Assis nasceu com o propósito de estudar e praticar o Espiritismo, promovendo a caridade sem distinções. Ao longo dos anos, mudou de endereço até chegar à sede atual, sempre guiado por amor, fé e dedicação, como a da inesquecível Inês Assumpção.</p>
-          <a href="" className='btnInfo'>Saiba Mais</a>
+          <button className="btnSaibaMais" onClick={pageQuemSomos}>Saiba mais</button>
           <img src={imgOng} alt="" className='img imgONG' />
         </div>
       

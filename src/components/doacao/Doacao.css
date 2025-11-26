@@ -1,6 +1,13 @@
+#doacao{
+  scroll-margin-top: 100px;
+}
+
 .doacao-container{
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .imgDoacao{
   width: 100%;

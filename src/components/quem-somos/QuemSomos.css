@@ -1,7 +1,4 @@
 
-.quem-somos{
-  padding-top: 100px;
-}
 .quem-carousel{
   width: 90%;
   overflow-x: auto;
@@ -93,23 +90,30 @@
 
 .quem-somos-text{
   font-size: 17px;
-  margin: 25px;
-  background-color: white;
+  margin: 1.563rem 31.25rem;
+  background-color: #F2EDE4;
   padding:10px;
   border: 1px solid black;
   border-radius: 10px;
 }
 
 
-@media(max-width: 1440px){
+@media(max-width: 1500px){
   .quem-carousel{
     width: 84%;
+  }
+
+  .quem-somos-text{
+    margin: 25px 75px;
   }
 }
 
 @media(max-width: 768px){
   .quem-carousel{
     width: 75%;
+  }
+  .quem-somos-text{
+    margin: 25px 45px;
   }
 }
 

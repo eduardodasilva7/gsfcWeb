@@ -18,6 +18,8 @@ function Menu(){
           <li className='item'><a href="/" className='btnNav'>Início</a></li>
           <li className='item'><a href="" className='btnNav'>Atividades</a></li>
           <li className='item'><a href="/luzeamor" className='btnNav'>Luz e Amor</a></li>
+          <li className='item'><a href="/#atividades" className='btnNav'>Atividades</a></li>
+          <li className='item'><a href="" className='btnNav'>Luz e Amor</a></li>
           <li className='item'><a href="/quem-somos" className='btnNav'>Quem somos</a></li>
           <li className='item'><a href="/#doacao" className='btnNav'>Como doar</a></li>
           <li className='item'><a href="/relatorio" className='btnNav'>Relatório</a></li>

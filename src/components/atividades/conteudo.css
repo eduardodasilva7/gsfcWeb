@@ -1,3 +1,12 @@
+#atividades {
+  scroll-margin-top: 100px; 
+}
+
+.atividades{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .card-grid {
   display: grid;
@@ -138,6 +147,10 @@
 
 .dot.active {
   background-color: #307063;
+}
+
+#atividades {
+  scroll-margin-top: 140px; /* ajuste conforme a altura do seu header */
 }
 
 
