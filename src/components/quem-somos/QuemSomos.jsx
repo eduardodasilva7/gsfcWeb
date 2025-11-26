@@ -4,7 +4,7 @@ import Carrosel from './Carrosel.jsx'
 function QuemSomos() {
   return(
     <div className='quem-somos'>
-      <h1>História e Fundação do Grupo Socorrista Francisco de Assis</h1>
+      <h1 className='quem-somos-title'>História e Fundação do Grupo Socorrista Francisco de Assis</h1>
 
       <Carrosel />
       

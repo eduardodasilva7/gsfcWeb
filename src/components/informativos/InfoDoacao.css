@@ -85,12 +85,14 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+  
 }
 
 .info-relatorio-card{
   border: 3px solid #307063;
   border-radius: 20px;
   width: 90%;
+  height: 650px;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -111,8 +113,7 @@
 }
 
 .info-relatorio-card-text{
-  font-size: 16px;
- 
+  font-size: 13px;
   margin: 5px 0;
 }
 
@@ -132,6 +133,10 @@
   }
 
   .tabela-doacao-infos-text{
+    font-size: 15px;
+  }
+
+  .info-relatorio-card-text{
     font-size: 15px;
   }
 }
@@ -167,12 +172,22 @@
     font-size: 18px;
     text-align: center;
   }
+
+  .info-relatorio-cards{
+    margin: 0 30px;
+  }
+
+  .info-relatorio-card-text{
+    font-size: 20px;
+  }
 }
 
 @media(min-width: 900px ){
   .info-relatorio-cards{
-    flex-direction: row;
+    /* flex-direction: row; */
     padding: 0 20px;
+    margin: 0 50px;
+    
   }
 
   .card-centro{
@@ -183,7 +198,20 @@
   .card-centro .info-relatorio-card-text{
     color: white;
   }
+  
+  
+  
+}
 
+@media(min-width: 1200px){
+  .info-relatorio-cards{
+
+    flex-direction: row;
+  }
+
+  .info-relatorio-card{
+    height: 1100px;
+  }
 }
 
 @media(min-width: 1400px ){
@@ -206,5 +234,32 @@
   .info-relatorio-subtitle{
     font-size: 25px;
 
+  }
+
+  .info-relatorio-cards{
+    margin: 0 90px;
+  }
+
+  .info-relatorio-card{
+    height: 950px;
+  }
+}
+
+@media(min-width: 1500px ){
+  .info-relatorio-card{
+    width: 500px;
+  }
+
+  .info-relatorio-card{
+    height: 900px;
+  }
+  .info-relatorio-card-text{
+    font-size: 20px;
+  }
+}
+
+@media(min-width: 1800px ){
+  .info-relatorio-card-text{
+    font-size: 22px;
   }
 }

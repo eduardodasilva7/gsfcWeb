@@ -5,16 +5,45 @@ import img3 from '../../assets/img/logoG.png'
 
 function Carrosel() {
 
-  return (
-    <div className="quem-carousel" >
-      <div className="quem-cartao" style={{backgroundImage: `url(${img})`}}></div>
-      <div className="quem-cartao" style={{backgroundImage: `url(${img2})`}}></div>
-      <div className="quem-cartao" style={{backgroundImage: `url(${img3})`}}></div>
-      <div className="quem-cartao" style={{backgroundImage: `url(${img})`}}></div>
-      
-      
+  
 
-    </div> 
+  return (
+    <div className="carouselQS">
+      <div id="carouselExample" className="carousel slide">
+        <div className="carousel-inner carouselQS-imgs ">
+          <div className="carousel-item active">
+            <img src={img} alt="" className="carouselQS-img" />
+          </div>
+          <div className="carousel-item">
+            <img src={img} alt="" className="carouselQS-img" />
+          </div>
+          <div className="carousel-item">
+            <img src={img} alt="" className="carouselQS-img" />
+          </div>
+      </div>
+      <button
+        className="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden ">Previous</span>
+      </button>
+      <button
+        className="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+        </div>
+    </div>
+
+
+    
   )
 }
 

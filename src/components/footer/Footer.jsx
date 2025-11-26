@@ -1,5 +1,5 @@
 import './Footer.css';
-import logo from '../../assets/img/logoP-remove-preto.png'
+import logo from '../../assets/img/logoP-remove-branco.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleQuestion, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
@@ -37,7 +37,7 @@ function Footer() {
           <FontAwesomeIcon icon={faFacebook} className='icon' />
           Facebook 
         </a>
-        <a href="" className='icones'>
+        <a href="mailto:gsfa@gfranciscodeassis.org.br" className='icones'>
           <FontAwesomeIcon icon={faEnvelope} className='icon' />
           Email
         </a>

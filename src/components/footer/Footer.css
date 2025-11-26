@@ -1,12 +1,16 @@
 .footer{
   width: 100%;
+  height: 300px;
   background-color: #307063;
   height: auto;
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  align-items: center;
-  padding-bottom: 5px;
+  padding-bottom: 0;
+}
+
+.direitos, .sede, .perguntas, .redes-sociais{
+  height: 200px;
 }
 
 .footer p, .footer h3 {
@@ -27,12 +31,9 @@
   width: 20%;
 }
 
-
-
 .perguntas {
   display: flex;
   flex-direction: column;
-  height: 100%;   
 }
 
 .icones{
@@ -89,13 +90,10 @@
   .footer{
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
     gap: 20px;
   }
-
-  .sede{
-    width: 80%;
-  }
-
+  
   .sede, .redes-sociais, .direitos{
     text-align: center;
   }
@@ -106,22 +104,21 @@
     font-size: 15px;
   }
 
+  .sede{
+    width: 50%;
+  }
+
   .icon{
     font-size: 20px;
   }
 
-  .redes-sociais{
-    text-align: start;
-  
-  }
   .redes-sociais-icones{
     margin-left: 22px;
   }
 
-  
-
   .perguntas h3{
-
     text-align: center;
+    display: flex;
+    align-items: center;
   }
 }
