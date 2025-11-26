@@ -20,6 +20,8 @@ function Menu(){
           <li className='item'><a href="" className='btnNav'>Luz e Amor</a></li>
           <li className='item'><a href="/quem-somos" className='btnNav'>Quem somos</a></li>
           <li className='item'><a href="/#doacao" className='btnNav'>Como doar</a></li>
+          <li className='item'><a href='/eventos' className='btnNav'>Eventos</a></li>
+          <li className='item'><a href='/formulario' className='btnNav'>Entre em Contato</a></li>
         </ul>
       </nav>
     </div>

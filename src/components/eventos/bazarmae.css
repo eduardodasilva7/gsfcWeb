@@ -1,0 +1,143 @@
+/* ===== Reset básico ===== */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf2;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Cabeçalho do Bazar ===== */
+.header-bazar {
+  background-color: #307063; /* fundo verde */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 100%;
+}
+
+.titulo-bazar-container {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ===== Botão Voltar ===== */
+.voltar-btn {
+  align-self: flex-start; /* botão à esquerda */
+  background-color: #1f4f3d;
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.voltar-btn:hover {
+  background-color: #145033;
+  box-shadow: 0 0 6px #1f4f3d;
+}
+
+/* ===== Banner ===== */
+.banner {
+  background: url('./imagens/solidariedade-banner.png') center no-repeat;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+ 
+.banner h2 {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 80%;
+}
+
+
+/* ===== Seção Sobre ===== */
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.sobre h2 {
+  color: #c00b0e;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sobre p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Informações ===== */
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.info div {
+  background-color: #fff4e0;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info h3 {
+  color: #c00b0e;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Rodapé do Bazar ===== */
+.footer-bazar {
+  font-size: 14px;
+  background-color: #307063;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.footer-bazar a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .banner h2 {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+
+  .titulo-bazar-container {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,166 @@
+/* ===== Reset básico ===== */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf2;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Menu principal ===== */
+.menu-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #307063;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.menu-principal img {
+  height: 50px;
+}
+
+.menu-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.menu-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.menu-nav li a:hover {
+  background-color: #1f4f3d;
+  box-shadow: 0 0 8px #1f4f3d;
+}
+
+/* ===== Botão de Voltar ===== */
+.voltar-btn {
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+  font-family: 'Segoe UI', sans-serif;
+
+}
+
+/* ===== Títulos ===== */
+.titulo-principal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin: 20px 0 10px;
+}
+
+
+
+.subtitulo {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* ===== Cards de eventos (Página principal) ===== */
+.main-eventos {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.eventos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2EDE4;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+}
+
+.imagem-eventos-container img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.titulo-eventos-container {
+  text-align: center;
+}
+
+.titulo-eventos {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.saber-mais {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #740B0D;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.saber-mais:hover {
+  background-color: #c00b0e;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .menu-principal,
+  .menu-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-principal img,
+  .menu-nav {
+    margin-bottom: 10px;
+  }
+
+  .main-eventos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eventos {
+    max-width: 90%;
+  }
+
+  .banner h2 {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+
+  .titulo-principal-container {
+    font-size: 22px;
+    text-align: center;
+  }
+}
