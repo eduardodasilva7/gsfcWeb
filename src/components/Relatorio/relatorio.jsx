@@ -9,7 +9,7 @@ function Relatorio() {
 
       <main className="relatorio-container">
         <section className="relatorio-header">
-          <h1>Relatório</h1>
+          <h1>Relatório de Responsabilidade</h1>
           <p>Acompanhe nossos dados</p>
         </section>
       </main>
