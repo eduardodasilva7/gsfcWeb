@@ -65,7 +65,11 @@ a{
 
 }  
 
-
+@media(min-width: 500px){
+  .img{
+    width: 84%;
+  }
+}
 
 @media(min-width: 1024px){
   
