@@ -17,8 +17,11 @@ function Menu(){
         <ul className='menuItems'>
           <li className='item'><a href="/" className='btnNav'>Início</a></li>
           <li className='item'><a href="/#atividades" className='btnNav'>Atividades</a></li>
-          <li className='item'><a href="" className='btnNav'>Luz e Amor</a></li>
+          <li className='item'><a href="/luz-e-amor" className='btnNav'>Luz e Amor</a></li>
           <li className='item'><a href="/quem-somos" className='btnNav'>Quem somos</a></li>
+          <li className="item"><a href="/relatorio" className="btnNav">Relatório</a></li>
+          <li className="item"><a href="/eventos" className="btnNav">Eventos</a></li>
+          <li className="item"><a href="/formulario" className="btnNav">Formulário</a></li>
           <li className='item'><a href="/#doacao" className='btnNav'>Como doar</a></li>
         </ul>
       </nav>
