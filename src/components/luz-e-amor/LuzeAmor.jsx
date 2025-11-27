@@ -1,5 +1,5 @@
 import React from 'react';
-import './luzeamor.css';
+import './LuzeAmor.css';
 import Menu from '../menu/Menu';
  import amorImg from '../../assets/img/luzeamor.jpg';
  import jovensImg from '../../assets/img/jovens.jpg';
