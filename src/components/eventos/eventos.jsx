@@ -2,6 +2,7 @@ import React from 'react';
 import '../eventos/eventos.css';
 import { Link } from 'react-router-dom';
 
+
 const Eventos = () => {
   return (
     <div lang="pt-BR">
@@ -18,7 +19,7 @@ const Eventos = () => {
             <div className="eventos">
               <div className="imagem-eventos-container">
                 <img
-                  src="/src/components/eventos/assets/bazardapechincha.png1.png"
+                  src="./assets/bazardapechincha.png1.png"
                   alt="imagem bazar da Pechincha"
                 />
               </div>
@@ -33,7 +34,7 @@ const Eventos = () => {
             <div className="eventos">
               <div className="imagem-eventos-container">
                 <img
-                  src="/src/components/eventos/assets/bazardiadasmaes.jpg"
+                  src="./assets/bazardiadasmaes.jpg"
                   alt="Bazar dia das mães"
                 />
               </div>
@@ -48,7 +49,7 @@ const Eventos = () => {
             <div className="eventos">
               <div className="imagem-eventos-container">
                 <img
-                  src="/src/components/eventos/assets/Almoço-em-Família.png"
+                  src="./assets/Almoço-em-Família.png"
                   alt="Almoço"
                 />
               </div>
@@ -65,7 +66,7 @@ const Eventos = () => {
             <div className="eventos">
               <div className="imagem-eventos-container">
                 <img
-                  src="/src/components/eventos/assets/bazardenatal.PNG1.PNG"
+                  src="./assets/bazardenatal.PNG1.PNG"
                   alt="Bazar de Natal"
                 />
               </div>
@@ -80,7 +81,7 @@ const Eventos = () => {
             <div className="eventos">
               <div className="imagem-eventos-container">
                 <img
-                  src="/src/components/eventos/assets/biscoitodoamor.PNG"
+                  src="./assets/biscoitodoamor.PNG"
                   alt="Biscoito do Amor"
                 />
               </div>
@@ -95,7 +96,7 @@ const Eventos = () => {
             <div className="eventos">
               <div className="imagem-eventos-container">
                 <img
-                  src="/src/components/eventos/assets/drive.PNG2.jpg"
+                  src="./assets/drive.PNG2.jpg"
                   alt="Drive Thru"
                 />
               </div>

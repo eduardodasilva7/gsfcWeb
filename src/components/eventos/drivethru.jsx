@@ -1,5 +1,6 @@
 import React from 'react';
 import '../eventos/bazarmae.css'; // importa o CSS específico do Bazar
+import Drive from './assets/drivethru.jpg'
 
 const BazarDaPechincha = () => {
   return (
@@ -14,7 +15,7 @@ const BazarDaPechincha = () => {
       {/* Banner */}
       <div
         className="banner"
-        style={{ backgroundImage: "url('/src/components/eventos/assets/drivethru.jpg')" }}
+        style={{ backgroundImage: `url(${Drive})` }}
       >
       </div>
 
