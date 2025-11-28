@@ -5,7 +5,8 @@ import QuemSomosPage from './pages/SobreNos/SobreNos.jsx';
 import LuzeAmor from './components/LuzeAmor/LuzeAmor.jsx';
 import Relatorio from './components/Relatorio/relatorio.jsx';
 import InformativosPage from './pages/InfoDoacao/InfoDoacao.jsx'
-
+import Amor from './components/artigos/amor.jsx'
+import Juventude from './components/artigos/juventude.jsx'
 
 function AppRoutes() {
   return (
@@ -16,6 +17,8 @@ function AppRoutes() {
         <Route path='/luzeamor' element={<LuzeAmor/>}/>
         <Route path='/relatorio' element={<Relatorio/>}/>
         <Route path="/informativos" element={<InformativosPage />} />
+        <Route path="/artigos/amor" element={<Amor/>}/>
+        <Route path="/artigos/juventude" element={<Juventude/>}/>
       </Routes>
     </Router>
   )
