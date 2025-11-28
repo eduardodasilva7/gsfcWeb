@@ -30,7 +30,7 @@ function Ong() {
         <div className="direita">
           <h2 className='title'>Como chegar na nossa ONG</h2>
           <a href="https://bit.ly/460ZEAa" target="_blank"><img src={imagemMaps} alt="" className='maps' /></a>
-          <p className='text textLogradouro'>Rua Diogo de Quadros, 363 - Chácara Santo António/Brooklin Santo Amaro - São Paulo - SP 04710-010</p>
+          <p className='text textLogradouro'>Rua Diogo de Quadros, 363 - Chácara Santo Antônio/Brooklin Santo Amaro - São Paulo - SP 04710-010</p>
           <a href="https://bit.ly/460ZEAa" className='btnMaps' target="_blank">
             <FontAwesomeIcon icon={faMapLocationDot} />
             Ver no Maps

@@ -1,130 +1,84 @@
-.quem-somos{
+/* Estilizando o body */
+.quemSomos {
+  background-color: #FFFFFF;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
 }
 
-.quem-somos-text {
-  font-size: 20px;
-  margin: 1.563rem 31.25rem;
-  background-color: #F2EDE4;
-  padding: 12px;
-  border: 1px solid black;
-  border-radius: 10px;
-  height: auto;
-}
+ 
 
-.quem-somos-title{
-  text-align: center;
-  margin: 12px;
-  font-size: 40px;
-}
-
-.carouselQS {
+/* ===== Banner ===== */
+.banner {
+  background: url('./imagens/Marrom\ Foto\ Bazar\ Instagram\ Post.png') center/cover no-repeat;
+  height: 300px;
   display: flex;
-  justify-content: center; 
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+   margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
-
-
-.carouselQS-img{
-  width: 700px;
-  height: 400px;
-  background-size: contain;
+ 
+.banner h2 {
+  font-size: 2rem;
+  background: rgba(0,0,0,0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+ 
 }
-
-.carouselQS .carousel-control-prev-icon,
-.carouselQS .carousel-control-next-icon {
-  filter: invert(100%); /* deixa o ícone preto */
+ 
+/* ===== Seção Sobre ===== */
+.sobre {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
-
-.carouselQS .carousel-control-prev,
-.carouselQS .carousel-control-next {
-  opacity: 1;
+ 
+.sobre h2 {
+  color: #c00b0e;
+  margin-bottom: 1rem;
+  text-align: center;
+    font-family: 'Segoe UI', sans-serif;
 }
-
-.carouselQS .carousel-control-prev:hover,
-.carouselQS .carousel-control-next:hover {
-  opacity: 0.7;
+ 
+.sobre p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+    font-family: 'Segoe UI', sans-serif;
 }
-
-
-
-@media(max-width: 1440px) {
-  .quem-somos-text {
-      margin: 1.563rem 23rem;
-  }
-
-  .carouselQS-img{
-    width: 600px;
-    height: 300px;
-
-  }
+ 
+/* ===== Informações ===== */
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
 }
-
-@media(max-width: 1024px){
-  .quem-somos-title{
-    font-size: 30px;
-  }
-
-  .quem-somos-text {
-      margin: 1.563rem 13rem;
-  }
+ 
+.info div {
+  background-color: #fff4e0;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
-@media(max-width: 1220px){
-  .quem-somos-text {
-      margin: 1.563rem 11rem;
-  }
+ 
+.info h3 {
+  color: #c00b0e;
+  margin-bottom: 0.5rem;
+    font-family: 'Segoe UI', sans-serif;
 }
-
-@media(max-width: 820px){
-  .quem-somos-text {
-      margin: 1.563rem 7rem;
-  }
-}
-
-@media(max-width: 768px) {
-  .quem-somos-title{
-    font-size: 25px;
-  }
-
-  .quem-somos-text {
-      margin: 1.563rem 5rem;
-  }
-
-  .carouselQS-img{
-
-    height: 250px;
-
+ 
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+  .banner h2 {
+    font-size: 1.3rem;
+    padding: 0.8rem;
   }
 }
-@media(max-width: 650px) {
-
-  .quem-somos-title{
-    font-size: 18px;
-  }
-
-  .carouselQS-img{
-    width: 320px;
-    height: 250px;
-
-  }
-
-  .quem-somos-text {
-      margin: 1.563rem 4rem;
-  }
-}
-
-@media(max-width: 375px) {
-  .quem-somos-text {
-      margin: 1.563rem 2.3rem;
-  }
-}
-
-@media(max-width: 320px){
-  .carouselQS-img{
-    width: 300px;
-    height: 200px;
-  }
-}
+ 
+ 

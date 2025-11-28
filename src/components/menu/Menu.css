@@ -6,9 +6,10 @@
   background-color: #307063;
   position:  sticky;
   top: 0;
-  z-index: 100;
   
 }
+
+
 
 .menuImg{
   display: flex;

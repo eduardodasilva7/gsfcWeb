@@ -16,7 +16,7 @@ function Footer() {
 
       <div className="sede">
         <h3>Sede</h3>
-        <p>Rua Diogo de Quadros, 363 - Chácara Santo António/Brooklin Santo Amaro -São Paulo - SP 04710-010</p>
+        <p>Rua Diogo de Quadros, 363 - Chácara Santo Antônio/Brooklin Santo Amaro -São Paulo - SP 04710-010</p>
       </div>
 
       <div className="perguntas">
