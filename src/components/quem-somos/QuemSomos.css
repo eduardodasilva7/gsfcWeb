@@ -1,6 +1,6 @@
 /* Estilizando o body */
 .quemSomos {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
   margin: 0;
   display: flex;
   flex-direction: column;

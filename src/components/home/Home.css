@@ -49,12 +49,12 @@
   }
 
   .home-container{
-    margin: 0 15rem;
+    margin: 0.5rem 15rem;
   }
 }
 @media(min-width: 1444px) {
 
   .home-container{
-    margin: 0 25rem;
+    margin: 1rem 25rem;
   }
 }

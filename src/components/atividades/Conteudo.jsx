@@ -1,14 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import './conteudo.css'
+import "./conteudo.css";
 import Palestras from "../../assets/img/Palestras.jpg";
 import Aprendizes from "../../assets/img/Aprendizes.jpg";
 import Espiritual from "../../assets/img/Espiritual.jpg";
 import Gestantes from "../../assets/img/Gestantes.jpg";
 import Juventude from "../../assets/img/Juventude.jpg";
 import Eventos from "../../assets/img/Eventos.jpg";
-
 
 function Conteudo() {
   const conteudos = [
@@ -56,8 +55,8 @@ function Conteudo() {
   ];
 
   return (
-    <div className="atividades container my-5" id="atividades" >
-      <h1 className="text-center mb-4" >Atividades</h1>
+    <div className="atividades container my-5" id="atividades">
+      <h1 className="text-center mb-4">Atividades</h1>
 
       <div
         id="atividadesCarousel"

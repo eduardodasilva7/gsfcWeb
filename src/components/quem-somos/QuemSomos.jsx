@@ -1,6 +1,6 @@
 import "./QuemSomos.css";
-import Carrosel from "./Carrosel.jsx";
-import img from "../../assets/img/luzeamor.jpg";
+
+import img from "../../assets/img/juntos.jpg";
 
 function QuemSomos() {
   return (
