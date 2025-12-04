@@ -204,7 +204,6 @@
     height: 25px;
   }
 
-<<<<<<< HEAD
   .carousel-indicators {
     margin-bottom: 4px;
     bottom: 5px;
@@ -225,7 +224,7 @@
     transform: scale(1.1);
   }
 
-=======
+
   .carousel-card {
     width: 100%;
     max-width: 95%;
@@ -281,7 +280,7 @@
   .carousel-dots {
     display: none !important;
   }
->>>>>>> 12b12ad53dd77628fdcd9aa582ed8c3b88e2c8f7
+
 
 }
 
