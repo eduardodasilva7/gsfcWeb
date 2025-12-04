@@ -24,6 +24,10 @@
   width: auto; 
 }
 
+.logo:hover{
+  cursor: pointer;
+}
+
 .logomenu{
   height: 50px;
   width: auto; 

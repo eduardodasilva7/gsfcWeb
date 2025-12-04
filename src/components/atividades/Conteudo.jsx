@@ -5,7 +5,7 @@ import "./conteudo.css";
 import Palestras from "../../assets/img/Palestras.jpg";
 import Aprendizes from "../../assets/img/Aprendizes.jpg";
 import Espiritual from "../../assets/img/Espiritual.jpg";
-import Gestantes from "../../assets/img/Gestantes.jpg";
+import Gestantes from "../../assets/img/Gestantes.png";
 import Juventude from "../../assets/img/Juventude.jpg";
 import Eventos from "../../assets/img/Eventos.jpg";
 

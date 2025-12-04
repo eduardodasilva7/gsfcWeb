@@ -71,8 +71,20 @@ a{
   }
 }
 
+@media(min-width: 700px){
+  .ong-container{
+    padding: 0 8rem;
+  }
+
+  .textApresentation{
+    font-size: 15px;
+  }
+}
+
 @media(min-width: 1024px){
-  
+  .ong-container{
+    padding: 0 7rem;
+  }
   .esquerda, .direita{
     width: 70%;
 
@@ -126,6 +138,8 @@ a{
 }
 
 @media(min-width: 1435px){
+
+  
   .direita .title, .esquerda .title{
     font-size: 25px;
   }
@@ -140,7 +154,7 @@ a{
   }
   
   .textApresentation{
-    padding: 2rem 20rem;
+    padding: 1rem 6rem;
   }
 }
 

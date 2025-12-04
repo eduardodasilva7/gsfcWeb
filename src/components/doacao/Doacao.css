@@ -55,6 +55,10 @@
 
 }
 
+.drive{
+  font-size: 19px;
+}
+
 .btnSaibaMais{
   border: none;
   width: 150px;
@@ -89,6 +93,14 @@
     font-size: 13px;
   }
 
+  .drive{
+    font-size: 14px;
+  }
+
+  .rotary{
+    font-size: 12px;
+  }
+
   .cartaoDoacao{
 
     width: 170px;
@@ -97,7 +109,8 @@
   }
 
   .titulosCartao{
-    font-size: 15px;
+    font-size: 17px;
+ 
   }
 
 }
@@ -109,13 +122,17 @@
   
   .cartaoDoacao{
 
-    width: 280px;
+    width: 240px;
     height: 370px;
   
   }
 
    .textoCartao{
     font-size: 18px;
+  }
+
+  .rotary{
+    font-size: 16px;
   }
 
   .imgDoacao{

@@ -33,7 +33,7 @@ function Menu() {
           </li>
           <li className="item">
             <a href="/luz-e-amor" className="btnNav">
-              Luz e Amor
+              Luz e amor
             </a>
           </li>
           <li className="item">
