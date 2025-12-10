@@ -1,14 +1,12 @@
 import React from 'react';
 import '../eventos/eventos.css';
 import { Link } from 'react-router-dom';
+import Menu from '../menu/Menu'
 
 const Eventos = () => {
   return (
     <div lang="pt-BR">
-      <header className="menu-principal">
-        <a href="/" className="voltar-btn">← Voltar</a>
-      </header>
-
+        <Menu/>
       <main>
         <h1 className="titulo-principal-container">Eventos</h1>
         <p className="subtitulo">Saiba tudo sobre nossos eventos</p>
