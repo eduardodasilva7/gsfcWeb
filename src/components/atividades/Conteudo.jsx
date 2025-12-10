@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./conteudo.css";
@@ -10,6 +10,34 @@ import Juventude from "../../assets/img/Juventude.jpg";
 import Eventos from "../../assets/img/Eventos.jpg";
 
 function Conteudo() {
+
+  useEffect(() => {
+    const handleScrollRequest = () => {
+      const hash = window.location.hash;
+
+      if (hash === "#atividades") {
+        setTimeout(() => {
+          const sec = document.getElementById("atividades");
+          if (sec) {
+            sec.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+            });
+          }
+        }, 100);
+      }
+    };
+
+    window.addEventListener("hashchange", handleScrollRequest);
+
+   
+    handleScrollRequest();
+
+    return () => {
+      window.removeEventListener("hashchange", handleScrollRequest);
+    };
+  }, []);
+
   const conteudos = [
     {
       titulo: "Gestantes e Crianças",
@@ -30,27 +58,27 @@ function Conteudo() {
       descricao: "Quarta-feira às 14:00h e 19:30h",
       imagem: Aprendizes,
       texto:
-        "A Escola de Aprendizes do Evangelho propicia o estudo da Doutrina Espírita em suas três dimensões: religiosa, filosófica e científica. O estudo do Evangelho que nos foi legado por Jesus Cristo e seu entendimento à luz da razão possibilita o trabalho de desenvolvimento individual, propiciando a melhora em nosso relacionamento com a sociedade.",
+        "A Escola de Aprendizes do Evangelho propicia o estudo da Doutrina Espírita em suas três dimensões: religiosa, filosófica e científica...",
     },
     {
       titulo: "Palestras Públicas",
       descricao: "Segunda e Terça às 19:45h — Quinta às 14:45h",
       imagem: Palestras,
       texto:
-        "Em nossas palestras públicas apresentamos temas evangélicos destinados a promover a autoreflexão dos participantes em temas de interesse individual. Saúde, sentimentos, relacionamento, emoções e Evangelho de Jesus são temas que promovem reflexão do indivíduo quanto ao seu relacionamento com a família e a comunidade.",
+        "Em nossas palestras públicas apresentamos temas evangélicos destinados a promover a autoreflexão dos participantes...",
     },
     {
       titulo: "Juventude",
       descricao: "Quinta-feira às 19:45h",
       imagem: Juventude,
       texto:
-        "Por meio de atividades lúdicas, palestras, artesanato e passes, a ética e moral cristã é trabalhada com os jovens entre oito e dezoito anos, transmitindo os ensinamentos de nosso mestre Jesus com leveza e alegria.",
+        "Por meio de atividades lúdicas, palestras, artesanato e passes, a ética e moral cristã é trabalhada com os jovens...",
     },
     {
       titulo: "Eventos",
       imagem: Eventos,
       texto:
-        "Nossos eventos periódicos objetivam o congraçamento entre os trabalhadores e assistidos da casa, além da arrecadação de fundos para manutenção de nossas atividades. Realizamos anualmente o Bazar de Dias das Mães e o Bazar de Natal e, quinzenalmente, o Bazar da Pechincha com artigos usados, mas em boas condições, que são vendidos a preço simbólico.",
+        "Nossos eventos periódicos objetivam o congraçamento entre os trabalhadores e assistidos da casa...",
     },
   ];
 
