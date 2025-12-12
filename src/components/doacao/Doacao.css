@@ -126,7 +126,10 @@
     height: 370px;
   
   }
-
+  .titulosCartao{
+    font-size: 23px;
+ 
+  }
    .textoCartao{
     font-size: 18px;
   }
