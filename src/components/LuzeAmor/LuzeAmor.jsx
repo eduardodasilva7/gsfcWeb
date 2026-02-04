@@ -20,7 +20,7 @@ function LuzeAmor() {
               src={amorImg}
               alt="Amor e Luz"
             />
-            <h3>Amor e Luz</h3>
+            <h3>Amor e luz</h3>
             <Link to="luzeamor"> 
             <button>Saiba mais</button>
            </Link>
