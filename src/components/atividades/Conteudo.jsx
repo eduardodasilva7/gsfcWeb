@@ -13,28 +13,28 @@ import Eventos from "../../assets/img/Eventos.jpg";
 function Conteudo() {
   const conteudos = [
     {
-      titulo: "Gestantes e Crianças",
+      titulo: "Gestantes e crianças",
       descricao: "Terça-feira às 14:45h",
       imagem: Gestantes,
       texto:
         "O atendimento a gestantes e crianças até 8 anos objetiva apoiar as futuras mamães a manterem o equilíbrio emocional, adequado a esta fase tão importante de suas vidas, o equilíbrio espiritual e físico de seus filhos.",
     },
     {
-      titulo: "Assistência Espiritual",
+      titulo: "Assistência espiritual",
       descricao: "Segunda e Terça às 19:45h — Quinta às 14:45h",
       imagem: Espiritual,
       texto:
         "Por intermédio de entrevista pessoal e privada, procuramos, junto com o assistido, identificar suas inquietudes, necessidades e dificuldades, e propomos uma intervenção conjunta, onde o assistido frequenta nossas palestras públicas e participa do serviço de assistência espiritual objetivando reencontrar o equilíbrio individual.",
     },
     {
-      titulo: "Escola de Aprendizes",
+      titulo: "Escola de aprendizes",
       descricao: "Quarta-feira às 14:00h e 19:30h",
       imagem: Aprendizes,
       texto:
         "A Escola de Aprendizes do Evangelho propicia o estudo da Doutrina Espírita em suas três dimensões: religiosa, filosófica e científica. O estudo do Evangelho que nos foi legado por Jesus Cristo e seu entendimento à luz da razão possibilita o trabalho de desenvolvimento individual, propiciando a melhora em nosso relacionamento com a sociedade.",
     },
     {
-      titulo: "Palestras Públicas",
+      titulo: "Palestras públicas",
       descricao: "Segunda e Terça às 19:45h — Quinta às 14:45h",
       imagem: Palestras,
       texto:
