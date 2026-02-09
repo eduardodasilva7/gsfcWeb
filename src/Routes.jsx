@@ -12,15 +12,16 @@ import Almoco from './components/eventos/almoco.jsx';
 import BazarNatal from './components/eventos/bazarnatal.jsx';
 import Biscoitodoamor from './components/eventos/biscoitodoamor.jsx';
 import DriveThru from './components/eventos/drivethru.jsx';
+import Teste from './components/luz-e-amor/teste.jsx'
 
 function AppRoutes() {
   return (
     <Router>
       <Routes>
-        <Route path="/luz-e-amor" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/quem-somos" element={<QuemSomosPage />} />
         <Route path="/informativos" element={<InformativosPage />} />
-        <Route path="/" element={<LuzAmor/>}/>
+        <Route path="/luz-e-amor" element={<LuzAmor/>}/>
         <Route path="/relatorio" element={<Relatorio/>} /> 
         <Route path='/formulario' element={<Fomulario/>}/>
         <Route path='/eventos' element={<Eventos/>}/>
@@ -30,6 +31,8 @@ function AppRoutes() {
         <Route path="/eventos/bazarnatal" element={<BazarNatal/>}/> 
         <Route path="/eventos/biscoitodoamor" element={<Biscoitodoamor />} />
         <Route path="/eventos/drivethru" element={<DriveThru />} />
+        <Route path="/luz-e-amor/:id" element={<Teste />} />
+
       </Routes>
     </Router>
   )
