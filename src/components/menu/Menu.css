@@ -1,0 +1,153 @@
+.menu{
+  max-width: 100vw;
+  height: 106px;
+  align-items: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.253);
+  background-color: #307063;
+  position:  sticky;
+  top: 0;
+  z-index: 999;
+}
+
+
+
+.menuImg{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo{
+  content: url('../../assets/img/logoP-remove-branco.png');
+  height: 45px;
+  width: auto; 
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+.logomenu{
+  height: 50px;
+  width: auto; 
+  
+}
+
+.menuItems{
+  text-align: center;
+  background-color: #307063;
+  border-radius: 0 0 22px 22px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+  padding-left: 0;
+}
+
+.menuItems.active{
+  max-height: 600px;
+  opacity: 1;
+
+}
+
+.item{
+  list-style: none;
+  padding: 23px 0;
+}
+
+
+
+.btnNav{
+   text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.btnNav:hover{
+  font-weight: bold;
+  font-size: 24px;
+  border-bottom: 1px solid #740B0D;
+  padding-bottom: 35px;
+}
+
+@media(min-width: 700px){
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+  }
+  
+
+
+  .logomenu{
+    display: none;
+  }
+
+  .menuItems{
+    overflow: visible;
+    display: inline-flex;
+    align-items: center;
+
+  }
+
+  .item{
+    padding: 0 10px;
+
+  }
+
+  .btnNav{
+    font-size: 14px;
+  }
+  .btnNav:hover{
+
+  font-size: 15px;
+  
+  padding-bottom: 37px;
+}
+}
+
+@media(min-width: 1024px){
+  .item{
+    padding: 0 15px;
+
+  }
+
+
+  .btnNav{
+    font-size: 15px;
+  }
+
+  .btnNav:hover{
+
+    font-size: 17px;
+    
+    padding-bottom: 35px;
+  }
+}
+
+@media(min-width: 1440px){
+  .menu{
+    padding: 0 30px;
+
+  }
+
+  .btnNav{
+    font-size: 22px;
+  }
+
+  .btnNav:hover{
+
+    font-size: 23px;
+  }
+
+  .item{
+    padding: 0 17px;
+  }
+
+  .logo{
+    content: url('../../assets/img/logoG-remove-preto.png'); 
+     height: 65px;
+  }
+}

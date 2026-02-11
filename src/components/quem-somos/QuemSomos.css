@@ -1,0 +1,84 @@
+/* Estilizando o body */
+.quemSomos {
+  /* background-color: #FFFFFF; */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+ 
+
+/* ===== Banner ===== */
+.banner {
+  background: url('./imagens/Marrom\ Foto\ Bazar\ Instagram\ Post.png') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+   margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+ 
+.banner h2 {
+  font-size: 2rem;
+  background: rgba(0,0,0,0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+ 
+}
+ 
+/* ===== Seção Sobre ===== */
+.sobre {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+ 
+.sobre h2 {
+  color: #c00b0e;
+  margin-bottom: 1rem;
+  text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+ 
+.sobre p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+ 
+/* ===== Informações ===== */
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+ 
+.info div {
+  background-color: #fff4e0;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+ 
+.info h3 {
+  color: #c00b0e;
+  margin-bottom: 0.5rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+ 
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+  .banner h2 {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+}
+ 
+ 
