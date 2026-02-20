@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../formulario/formulario.css';
+import Menu from '../menu/Menu'
 
 const Formulario = () => {
   const [formData, setFormData] = useState({
@@ -49,9 +50,7 @@ const Formulario = () => {
 
   return (
     <div lang="pt-BR">
-      <header className="menu-principal">
-        <a href="/" className="voltar-btn">← Voltar</a>
-      </header>
+      <Menu />
 
       <main>
         <div className="entre-em-contato-container">

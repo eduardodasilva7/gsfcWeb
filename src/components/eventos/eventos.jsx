@@ -7,13 +7,12 @@ import Almoco from './assets/Almoço-em-Família.png';
 import BazarNatal from './assets/bazardenatal.PNG1.PNG';
 import BiscoitoAmor from './assets/biscoitodoamor.PNG';
 import DriveThru from './assets/drive.PNG2.jpg';
+import Menu from '../menu/Menu'
 
 const Eventos = () => {
   return (
     <div lang="pt-BR">
-      <header className="menu-principal">
-        <a href="/" className="voltar-btn">← Voltar</a>
-      </header>
+      <Menu />
 
       <main>
         <h1 className="titulo-principal-container">Eventos</h1>

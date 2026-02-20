@@ -1,15 +1,20 @@
 /* ===== Layout Geral ===== */
+*{
+  padding: 0;
+  margin: 0;
+}
+ 
 body {
   background-color: #f9f4eb;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
+ 
 .luzeamor-container {
   text-align: center;
-  padding: 60px 20px;
+  padding: 20px;
 }
-
+ 
 /* ===== Cabeçalho ===== */
 .luzeamor-header h1 {
   font-size: 2.5rem;
@@ -17,51 +22,81 @@ body {
   color: #333;
   margin-bottom: 0.3rem;
 }
-
+ 
 .luzeamor-header p {
   color: #555;
   font-size: 1rem;
   margin-bottom: 40px;
 }
-
+ 
 /* ===== Cards ===== */
-.artigos-grid {
-  display: flex;
+.artigos-grid-luzeamor {
+  display: grid;
+  grid-template-columns: repeat(3, 300px); /* 3 colunas fixas */
+  gap: 30px;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px; /* um pouco mais de espaço entre os cards */
+  margin-top: 20px;
 }
-
-.artigo-card {
+ 
+.artigo-card-luzeamor {
   background-color: #f0ece3;
   border-radius: 12px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
-  width: 300px;           /* antes era 250px */
+  width: 300px;   
+  height: 100%;
   padding: 25px;          /* antes era 20px */
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+ 
 }
-
+.btnLuz{
+  margin-top: auto;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #740B0D;
+  color: #ffffff;
+}
+.paragrafo-luzeamor {
+  color: black;
+  font-size: 0.9rem;          /* tamanho fixo */
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;      /* mostra apenas 4 linhas */
+  overflow: hidden;
+}
+ 
 .artigo-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
-
-.artigo-card img {
-  width: 100%;
-  height: 200px;          /* mantém proporção visual agradável */
+ 
+.img-luzeamor {
+  width: 250px;
+  height: 80px;          /* mantém proporção visual agradável */
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;
+   
 }
-
+ 
 .artigo-card h3 {
   margin: 12px 0;
   color: #1c2b2d;
   font-weight: 600;
   font-size: 1.1rem;      /* um pouco maior */
 }
-
+ 
+.title-luzeamor {
+  font-size: 1.0rem;
+  margin-top: 10px;
+}
+ 
 .artigo-card button {
   background-color: #8b0000;
   color: #fff;
@@ -72,7 +107,22 @@ body {
   font-weight: 500;
   transition: background-color 0.3s ease;
 }
-
+ 
+ 
 .artigo-card button:hover {
   background-color: #a40000;
+}
+
+@media (max-width: 770px) {
+  .artigos-grid-luzeamor{
+    grid-template-columns: repeat(2, 300px);
+  }
+
+}
+
+@media (max-width: 430px) {
+  .artigos-grid-luzeamor{
+    grid-template-columns: repeat(1, 300px);
+  }
+
 }

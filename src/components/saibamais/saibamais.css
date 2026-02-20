@@ -1,0 +1,71 @@
+/* Container principal */
+.saiba-mais-container {
+  background-color: #f4f1ea;
+  min-height: 100vh;
+  padding: 0;
+}
+ 
+/* Container da seta de voltar */
+.back-button-container {
+  max-width: 900px;
+  margin: 20px auto 0 auto; /* distância do logo */
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-start; /* seta à esquerda */
+}
+ 
+.back-button {
+  font-size: 60px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0c0c0c;
+  padding: 10px;
+  user-select: none;
+ 
+  position: absolute;
+  top: 120px;   /* controla altura */
+  left: 20px;   /* distância da esquerda */
+}
+ 
+ 
+ 
+/* Container do título */
+.title-container {
+  max-width: 900px;
+  margin: 30px auto; /* distância da seta */
+  padding: 0 20px;
+  text-align: center;
+}
+ 
+.title-container h1 {
+  font-size: 42px;
+  margin: 0;
+  color: #2c2c2c;
+ 
+}
+ 
+/* Container do texto */
+.text-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+ 
+.text-container p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  padding: 2px;
+}
+.text-container p:last-child {
+  margin-bottom: 0;
+ 
+}
+ 
+ .saiba-mais-container img {
+width: 100%;
+align-items: center;
+}
+ 
