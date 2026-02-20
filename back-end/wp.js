@@ -1,41 +1,30 @@
-// import { useEffect, useState } from 'react';
+const BASE_URL = "https://gsfc-senac.free.nf"
+const API_URL = `${BASE_URL}/wp-json/wp/v2`
 
-//   const [posts, setPosts] = useState([])
-//   const [categories, setCategories] = useState({})
-//   const [featuredImages, setFeaturedImages] = useState({})
 
   export const fetchWordPressPost = async () => {
     try{
 
-      const apiResponse = await fetch("http://localhost/gsfc/wp-app/wp-json/wp/v2/posts", {
+      const apiResponse = await fetch(`${API_URL}/posts`, {
         "method": "GET",
         "headers": {
           "Content-type": "application/json",
-          // "Authorization": "Basic " +btoa("admin:admin")
+          
         }
       })
 
-    //   const listPosts = await apiResponse.json()
-    //   setPosts(listPosts)
-
-    //   const featuredMediaImages = await fetchWordPressMediaImages(listPosts)
-
-    //   setFeaturedImages(featuredMediaImages)
-
+  
       return await apiResponse.json()
     }catch(error) {
       console.log(error)
     }
   }
 
-//   useEffect( () => {
-//     fetchWordPressPost()
-//     fetchWordPressPostsCategories()
-//   }, [])
+
 
   export const fetchWordPressPostsCategories = async() => {
     try{
-      const apiResponse = await fetch("http://localhost/gsfc/wp-app/wp-json/wp/v2/categories", {
+      const apiResponse = await fetch(`${API_URL}/categories`, {
         method: "GET",
         headers: {
           "Content-type": "application/json",
@@ -64,7 +53,7 @@
       listofPost.map( async(singlePostObject, index) => {
         if(singlePostObject.featured_media > 0){
           try{
-            const apiResponse = await fetch("http://localhost/gsfc/wp-app/wp-json/wp/v2/media/" + singlePostObject.featured_media, {
+            const apiResponse = await fetch(`${API_URL}/media/` + singlePostObject.featured_media, {
               method: "GET",
               headers: {
                 "Content-type": "application/json"
@@ -75,11 +64,11 @@
             mediaImagesArray[singlePostObject.id] =apiData.source_url
           }catch(error){
             console.log(error);
-            mediaImagesArray[singlePostObject.id] = "http://localhost/gsfc/wp-app/wp-content/uploads/2026/02/pngtree-no-image-available-icon-flatvector-illustration-pic-design-profile-vector-png-image_40966566.jpg"
+            mediaImagesArray[singlePostObject.id] = `${API_URL}/pngtree-no-image-available-icon-flatvector-illustration-pic-design-profile-vector-png-image_40966566/`
 
           }
         }else{
-          mediaImagesArray[singlePostObject.id] = "http://localhost/gsfc/wp-app/wp-content/uploads/2026/02/pngtree-no-image-available-icon-flatvector-illustration-pic-design-profile-vector-png-image_40966566.jpg"
+          mediaImagesArray[singlePostObject.id] = `${API_URL}/pngtree-no-image-available-icon-flatvector-illustration-pic-design-profile-vector-png-image_40966566.jpg`
         }
       })
     )

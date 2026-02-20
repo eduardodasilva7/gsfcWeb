@@ -42,7 +42,7 @@ function LuzeAmor() {
          
           <section className="artigos-grid-luzeamor">
             {
-             posts.map( (post) => (
+             posts?.map( (post) => (
                
                  <div key={post.id} className="artigo-card-luzeamor">
                    <img className='img-luzeamor'
